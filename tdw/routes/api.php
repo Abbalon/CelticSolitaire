@@ -25,7 +25,7 @@ Route::get('/admin/{id}', 'UserController@SelectById');
 
 Route::put('/admin/{id}', 'UserController@UpdateUser');
 Route::put('/admin/validate/{id}', 'UserController@ValidatePlayer');
-Route::put('/user/{id}', 'UserController@UpdateUser');
+Route::put('/user', 'UserController@UpdateUser');
 
 Route::delete('/admin', 'UserController@DropUser');
 Route::delete('/admin/{id}', 'UserController@DeleteUser');

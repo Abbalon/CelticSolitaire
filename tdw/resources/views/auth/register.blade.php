@@ -23,39 +23,45 @@
 
                         <div class="content">
                             <!-- ################################################################################################ -->
-
                             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
 
+                                <div class="group">
+                                    <div class="one_quarter first">
+                                        <label for="name" class="control-label">Name</label>
+                                    </div>
+                                    <div class="three_quarter">
+                                        <input id="name" type="text" class="form-control" name="name"
+                                               value="{{ old('name') }}" required autofocus>
 
-                                <label for="name" class="control-label">Name</label>
-
-                                <div class="col-md-6">
-                                    <input id="name" type="text" class="form-control" name="name"
-                                           value="{{ old('name') }}" required autofocus>
-
-                                    @if ($errors->has('name'))
-                                        <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                    @endif
+                                        @if ($errors->has('name'))
+                                            <span class="help-block">
+                                          <strong>{{ $errors->first('name') }}</strong>
+                                      </span>
+                                        @endif
+                                    </div>
                                 </div>
                             </div>
-
+                            <!-- ################################################################################################ -->
+                            <!-- ################################################################################################ -->
                             <div class="form-group{{ $errors->has('nick') ? ' has-error' : '' }}">
-                                <label for="nick" class="control-label">Nick</label>
 
-                                <div class="col-md-6">
-                                    <input id="nick" type="nick" class="form-control" name="nick"
-                                           value="{{ old('nick') }}" required>
+                                <div class="group">
+                                    <div class="one_quarter first">
+                                        <label for="nick" class="control-label">Nick</label>
+                                    </div>
+                                    <div class="three_quarter">
+                                        <input id="nick" type="text" class="form-control" name="nick"
+                                               value="{{ old('nick') }}" required autofocus>
 
-                                    @if ($errors->has('nick'))
-                                        <span class="help-block">
-                                        <strong>{{ $errors->first('nick') }}</strong>
-                                    </span>
-                                    @endif
+                                        @if ($errors->has('nick'))
+                                            <span class="help-block">
+                                          <strong>{{ $errors->first('nick') }}</strong>
+                                      </span>
+                                        @endif
+                                    </div>
                                 </div>
                             </div>
-
+                            <!-- ################################################################################################ -->
                             <!-- ################################################################################################ -->
                             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
 
@@ -96,27 +102,35 @@
                                 </div>
                             </div>
                             <!-- ################################################################################################ -->
-
+                            <!-- ################################################################################################ -->
                             <div class="form-group">
-                                <label for="password-confirm" class="control-label">Confirm Password</label>
 
-                                <div class="col-md-6">
-                                    <input id="password-confirm" type="password" class="form-control"
-                                           name="password_confirmation" required>
+                                <div class="group">
+                                    <div class="one_quarter first">
+                                        <label for="password-confirm" class="control-label">Confirm Password</label>
+                                    </div>
+                                    <div class="three_quarter">
+                                        <input id="password-confirm" type="password" class="form-control"
+                                               name="password_confirmation" required>
+
+                                        @if ($errors->has('password'))
+                                            <span class="help-block">
+                                            <strong>{{ $errors->first('password') }}</strong>
+                                        </span>
+                                        @endif
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="form-group">
-                                <div class="col-md-6 col-md-offset-4">
-                                    <button type="submit" class="btn btn-primary">
-                                        Register
-                                    </button>
-                                </div>
+                            <!-- ################################################################################################ -->
+                            <div class="two_third">
+                                <button type="submit" class="btn btn-primary">
+                                    Register
+                                </button>
                             </div>
+                        </div>
                     </form>
+                </main>
             </div>
         </div>
-    </div>
-    </div>
     </div>
 @endsection

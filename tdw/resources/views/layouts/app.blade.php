@@ -56,7 +56,11 @@
           <div class="spacer">
             <header id="header" class="clear">
               <div id="logo" class="fl_left">
-                <h1><a href="index.html">Celtic Solitaire - {{ Auth::user()->name }}</a></h1>
+                  <h1><a href="index.html">Celtic Solitaire
+                          @if (!Auth::guest())
+                              - {{ Auth::user()->name }}
+                          @endif
+                      </a></h1>
               </div>
               <div class="fl_right">
                 <form class="clear" method="post" action="#">

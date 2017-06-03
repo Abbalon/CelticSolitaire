@@ -18,6 +18,7 @@
 
     <!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{{ asset('js/adminFuntions.js') }}"></script>
 
 
 </head>
@@ -86,7 +87,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/adminFuntions.js') }}"></script>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="{{ asset('js/adminFuntions.js') }}"></script>
 </body>

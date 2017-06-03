@@ -7,7 +7,7 @@
     <nav id="mainav" class="clear">
       <ul class="clear">
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a  id="btnValidate">Validate</a></li>
+        <li><a id="validate" >Validate</a></li>
         <li><a href="#">Top 10</a></li>
         <li><a class="drop" href="#">Crud</a>
           <ul>
@@ -42,7 +42,6 @@
       <div id="validated" class="one_half first">
         <article>
           <h3 class="font-x1"><i class="fa fa-random"></i> &nbsp; Última puntuación</h3>
-          <p class="nospace">Quisque mollis nisl a hendrerit eleifend cum sociis natoque penatibus et magneis dis parturient <a href="#">read more &raquo;</a></p>
         </article>
       </div>
       <div class="one_half">

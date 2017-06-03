@@ -23,17 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
-    }
-
-    /**
-     * Show the profile for the given user.
-     *
-     * @param  int $id
-     * @return Response
-     */
-    public function hola()
-    {
-        return view('hola');
+        return view('user');
     }
 }

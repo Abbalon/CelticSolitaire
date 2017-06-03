@@ -31,9 +31,17 @@ class LoginController extends Controller
     public function redirectTo(){
       if(Auth::user()->isAdmin == 1){
         return '/admin';
-      }
-      else {
-        return '/user';
+      } elseif (
+          (Auth::user()->isEnabled == 1) &&
+          (Auth::user()->isDelete == 0)
+      ) {
+          return '/user';
+      } else {
+          //TODO
+          $message = "Access denied";
+          echo "<script type='text/javascript'>alert('$message');</script>";
+          Auth::logout();
+          return '/';
       }
     }
 

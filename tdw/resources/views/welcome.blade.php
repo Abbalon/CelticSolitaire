@@ -66,10 +66,9 @@
     </style>-->
 </head>
 <body id="top" class="bgded fixed" style="background-image:url({{ asset('images/Stonehenge_BackGround.jpg') }});">
-
+<!-- ################################################################################################ -->
 <div class="wrapper row0">
     <div id="topbar" class="clear">
-        <!-- ################################################################################################ -->
         <div class="fl_left">
             <ul class="faico clear">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -82,18 +81,22 @@
         </div>
 
         <div class="fl_right">
-            @if (Route::has('login'))
-                <ul class="faico clear">
-                    @if (Auth::check())
-                        <li><a href="{{ url('/home') }}" title="Home"><i class="fa fa-home"></i></a></li>
-                    @else
-                        <li><a href="{{ url('/login') }}" title="Login"><i class="fa fa-sign-in"></i></a></li>
-                        <li><a href="{{ url('/register') }}" title="Register"><i class="fa fa-user-plus"></i></a></li>
-                    @endif
-                </ul>
+            <ul class="faico clear">
+                <li><a href="{{ url('/') }}" title="Home"><i class="fa fa-home"></i></a></li>
+                <!-- Authentication Links -->
+                @if (Auth::guest())
+                    <li><a href="{{ url('/login') }}" title="Login"><i class="fa fa-sign-in"></i></a></li>
+                    <li><a href="{{ url('/register') }}" title="Register"><i class="fa fa-user-plus"></i></a></li>
+                @else
+                    <li><a href="{{ route('logout') }}" title="Logout" onclick="event.preventDefault();
+                       document.getElementById('logout-form').submit();"><i class="fa fa-sign-out"></i></a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                    </li>
+            </ul>
             @endif
         </div>
-
     </div>
 </div>
 <!-- ################################################################################################ -->

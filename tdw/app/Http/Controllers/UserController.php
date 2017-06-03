@@ -33,7 +33,10 @@ class UserController extends Controller
    */
   public function ListValidatePlayer()
   {
-      $users = User::where('isEnabled', 0)
+      $users = User::where([
+          ['isEnabled', 0],
+          ['isDelete', 0]
+      ])
           ->get();
 
       if ($users<>"[]") {

@@ -21,7 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', function () {
   if(Auth::user()->isAdmin == 1){
-    return view('admin');
+      return view('admin.admin');
   }
   else {
     return redirect('user');
@@ -29,9 +29,13 @@ Route::get('/admin', function () {
 })->name('admin')->middleware('auth');
 
 Route::get('/user', function () {
-    return view('user');
+    return view('user.user');
 })->name('user')->middleware('auth');
 
 Route::get('/update', function () {
-    return view('update');
+    return view('user.update');
 })->name('update')->middleware('auth');
+
+Route::get('/game', function () {
+    return view('game.game');
+})->name('game')->middleware('auth');

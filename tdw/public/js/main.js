@@ -70,7 +70,7 @@ Game.prototype.newGame = function () {
 
 /**
  * Establece el estado de los tokens de cada fila por defecto
- * @param gb Fila en la que se vana  situar los tokens
+ * @param gb Fila en la que se van a  situar los tokens
  */
 Game.prototype.defineTokens = function (gb) {
     if (this.custom == false) {

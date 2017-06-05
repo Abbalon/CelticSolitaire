@@ -1,28 +1,4 @@
-@extends('layouts.gameLayout')
-
-@section('option')
-<!-- ################################################################################################ -->
-<div class="wrapper row2">
-  <div class="spacer">
-    <nav id="mainav" class="clear">
-      <ul class="clear">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a class="drop" href="#">Profile</a>
-          <ul>
-            <li><a href="/update">Update</a></li>
-            <li><a href="">Delete</a></li>
-          </ul>
-        </li>
-        <li><a class="drop" href="#">Play</a>
-          <ul>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Restore last</a>
-        </ul>
-    </nav>
-  </div>
-</div>
-<!-- ################################################################################################ -->
-@endsection
+@extends('layouts.app')
 
 @section('content')
 
@@ -36,7 +12,7 @@
         <!-- ################################################################################################ -->
 
         <form id="sidePanel">
-            <p id="score"></p>
+            <p class="font-x1" id="score"></p>
 
             <form id="countdown">
                 <h3 id="ctdown"></h3>
@@ -84,6 +60,5 @@
 <!-- ################################################################################################ -->
 
 <script src= "{{ asset('js/Game.js') }}"></script>
-<script src="{{ asset('js/user.js') }}"></script>
 
 @endsection

@@ -20,12 +20,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', function () {
-  if(Auth::user()->isAdmin == 1){
-      return view('admin.admin');
-  }
-  else {
-    return redirect('user');
-  }
+    if (Auth::user()->isAdmin == 1) {
+        return view('admin.admin');
+    } else {
+        return redirect('user');
+    }
 })->name('admin')->middleware('auth');
 
 Route::get('/user', function () {

@@ -83,6 +83,26 @@
                             </div>
                             <!-- ################################################################################################ -->
                             <!-- ################################################################################################ -->
+                            <div class="form-group{{ $errors->has('telf') ? ' has-error' : '' }}">
+
+                                <div class="group">
+                                    <div class="one_quarter first">
+                                        <label for="telf" class="control-label">Telephone number</label>
+                                    </div>
+                                    <div class="three_quarter">
+                                        <input id="telf" type="text" class="form-control" name="telf"
+                                               value="{{ old('telf') }}" required autofocus>
+
+                                        @if ($errors->has('telf'))
+                                            <span class="help-block">
+                                              <strong>{{ $errors->first('telf') }}</strong>
+                                          </span>
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ################################################################################################ -->
+                            <!-- ################################################################################################ -->
                             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
 
                                 <div class="group">

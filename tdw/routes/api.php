@@ -20,13 +20,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 */
 
 Route::get('/admin', 'UserController@ListValidatePlayer');
+Route::get('/admin/average', 'UserController@ListAverage');
 Route::get('/users', 'UserController@SelectAll');
 Route::get('/user/{id}', 'UserController@SelectById');
 Route::get('/admin/{id}', 'UserController@SelectById');
 
 Route::put('/admin/{id}', 'UserController@UpdateUser');
 Route::put('/admin/validate/{id}', 'UserController@ValidatePlayer');
-Route::put('/user', 'UserController@UpdateUser');
+Route::put('/user/{id}', 'UserController@UpdateUser');
 
 Route::delete('/admin', 'UserController@DropUser');
 Route::delete('/admin/{id}', 'UserController@DeleteUser');
@@ -34,13 +35,14 @@ Route::delete('/admin/{id}', 'UserController@DeleteUser');
 Route::post('/admin', 'UserController@NewUser');
 Route::post('/user', 'UserController@NewUser');
 
-Route::post('/game', 'GameController@NewGame');
+Route::post('/game', 'GameController@NewGame');//create new game
 
+//Route::get('/admin/average', 'GameController@ListAverage');
 Route::get('/game/dates', 'GameController@SelectBetween');
-Route::get('/game', 'GameController@SelectScores');
-Route::get('/game/{id}', 'GameController@SelectAll');
+Route::get('/game/{id}', 'GameController@SelectScores');
+Route::get('/game', 'GameController@SelectAll');
 
-Route::put('/game', 'GameController@Save');
+Route::put('/game/{id}', 'GameController@Save');//updateGame
 //TODO Restore
 
 //Route::get('/login','AccessController@GetAccess');

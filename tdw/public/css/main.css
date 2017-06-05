@@ -10,13 +10,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-    background-color: lightgreen;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -99,7 +92,7 @@ textarea {
  * Div id=body
  */
 #body {
-    font-family: Irish;
+    /*font-family: Irish;*/
     color: yellow;
     text-align: center;
 }
@@ -108,7 +101,7 @@ textarea {
  * Div id=menu
  */
 #menu {
-    font-family: StoneCross;
+    /*font-family: StoneCross;*/
     text-align: center;
     position: relative;
     overflow: auto;
@@ -118,7 +111,7 @@ textarea {
     top: 0;
     padding: 18px 50px;
     z-index: 999;
-    background-image: url('../img/background.jpeg');
+    background-image: url('../images/background.jpeg');
     background-repeat: repeat;
 }
 
@@ -200,7 +193,7 @@ Knot
  */
 #playSpace {
     position: absolute;
-    background-image: url("../img/agua.gif");
+    background-image: url("../images/agua.gif");
     border-radius: 20%;
     left: 30em;
     top: 0.5em;
@@ -262,7 +255,7 @@ Knot
 
 .imagen {
     border: none;
-    background: transparent url("../img/tokens/bola.jpg") no-repeat 50%;
+    background: transparent url("../images/tokens/bola.jpg") no-repeat 50%;
     padding: 0;
     height: 3.5em;
     width: 3.5em;
@@ -270,12 +263,12 @@ Knot
 }
 
 .imagen:hover {
-    background-image: url("../img/tokens/bola_pulsada.jpg");
+    background-image: url("../images/tokens/bola_pulsada.jpg");
     cursor: hand;
 }
 
 .imagen:focus {
-    background-image: url("../img/tokens/bola_pulsada.jpg");
+    background-image: url("../images/tokens/bola_pulsada.jpg");
     outline: none;
 }
 
@@ -286,7 +279,7 @@ Knot
 / / left: 0.5 em;
     height: 2.5em;
     width: 2.5em;
-    background-image: url("../img/tokens/hueco.jpg");
+    background-image: url("../images/tokens/hueco.jpg");
     cursor: hand;
     border-radius: 100%;
     border-style: none;
@@ -297,7 +290,7 @@ Knot
 }
 
 #sq1 {
-    background-image: url("../img/tokens/plano.jpg");
+    background-image: url("../images/tokens/plano.jpg");
     border-radius: 20% 20% 0% 0%;
     position: inherit;
     top: 0em;
@@ -307,7 +300,7 @@ Knot
 }
 
 #sq2 {
-    background-image: url("../img/tokens/plano.jpg");
+    background-image: url("../images/tokens/plano.jpg");
     border-radius: 20% 0% 0% 20%;
     position: inherit;
     top: 10em;
@@ -318,7 +311,7 @@ Knot
 }
 
 #sq3 {
-    background-image: url("../img/tokens/plano.jpg");
+    background-image: url("../images/tokens/plano.jpg");
     position: inherit;
     top: 10em;
     left: 8.5em;
@@ -327,7 +320,7 @@ Knot
 }
 
 #sq4 {
-    background-image: url("../img/tokens/plano.jpg");
+    background-image: url("../images/tokens/plano.jpg");
     border-radius: 0% 20% 20% 0%;
     position: inherit;
     top: 10em;
@@ -337,7 +330,7 @@ Knot
 }
 
 #sq5 {
-    background-image: url("../img/tokens/plano.jpg");
+    background-image: url("../images/tokens/plano.jpg");
     border-radius: 0% 0% 20% 20%;
     position: inherit;
     top: 23em;
@@ -359,13 +352,13 @@ Knot
 .scoregreen {
     text-align: center;
     color: #25e72f;
-    font-size: 40pt;
+    font-size: 2em;
 }
 
 .scorered {
     text-align: center;
     color: red;
-    font-size: 40pt;
+    font-size: 2em;
 }
 
 #end {

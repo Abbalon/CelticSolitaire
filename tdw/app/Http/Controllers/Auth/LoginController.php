@@ -29,13 +29,17 @@ class LoginController extends Controller
     //protected $redirectTo = '/home';
 
     public function redirectTo(){
+
+    $id = Auth::user()->id;
+
       if(Auth::user()->isAdmin == 1){
         return '/admin';
       } elseif (
           (Auth::user()->isEnabled == 1) &&
           (Auth::user()->isDelete == 0)
       ) {
-          return '/user';
+          $path = '/user?id='.$id;
+          return $path ;
       } else {
           //TODO
           $message = "Access denied";

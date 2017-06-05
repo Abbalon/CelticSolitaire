@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Stonehen';
+    src: url('../fonts/Stonehen.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Irish';
+    src: url('../fonts/Irish.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'StoneCross';
+    src: url('../fonts/StCross.ttf') format('truetype');
+}

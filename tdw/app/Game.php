@@ -16,6 +16,7 @@ class Game extends Model
         'idUser',
         'score',
         'created_at',
+        'gameBoard',
     ];
 
     /**

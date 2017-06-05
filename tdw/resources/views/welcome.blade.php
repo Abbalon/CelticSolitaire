@@ -73,6 +73,7 @@
             <ul class="faico clear">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
@@ -82,7 +83,11 @@
 
         <div class="fl_right">
             <ul class="faico clear">
-                <li><a href="{{ url('/') }}" title="Home"><i class="fa fa-home"></i></a></li>
+              @if (!Auth::guest())
+                <li><a href="/user?id={{ Auth::user()->id }}" title="Home"><i class="fa fa-home"></i></a></li>
+              @else
+                <li><a href="/" title="Home"><i class="fa fa-home"></i></a></li>
+              @endif
                 <!-- Authentication Links -->
                 @if (Auth::guest())
                     <li><a href="{{ url('/login') }}" title="Login"><i class="fa fa-sign-in"></i></a></li>

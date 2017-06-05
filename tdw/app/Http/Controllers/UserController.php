@@ -12,14 +12,23 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 class UserController extends Controller
 {
   /**
-   * Show the profile for the given user.
+   * Show the information of a specific user
    *
-   * @param  int $id
+   *
    * @return Response
    */
-  public function test()
+  public function SelectAll()
   {
-      echo 'Hola mundo';
+    $users = DB::table('users')->get();
+
+    if ($users<>"[]") {
+        return response()->json(
+
+            $users
+            ,
+            200
+        );
+    }
   }
 
   /**

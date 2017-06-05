@@ -20,6 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 */
 
 Route::get('/admin', 'UserController@ListValidatePlayer');
+Route::get('/users', 'UserController@SelectAll');
 Route::get('/user/{id}', 'UserController@SelectById');
 Route::get('/admin/{id}', 'UserController@SelectById');
 

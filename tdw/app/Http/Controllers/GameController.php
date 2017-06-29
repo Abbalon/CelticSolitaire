@@ -213,6 +213,7 @@ class GameController extends Controller
         } catch (QueryException $e) {
             return response()->json(
                 [
+                    "exceptionText" =>$e,
                     "statusText" => "<h2>Algo fue mal, avise al administrador.</h2>",
                     "statusCode" => "<h1>400</h1>"
                 ],

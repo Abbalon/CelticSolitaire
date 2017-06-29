@@ -166,8 +166,8 @@ function newGame(id) {
     $.getJSON(
       '/api/game?id=' + id,
       function(data) {
-        $.each(data, function(i, score) {
-          localStorage.setItem('idGame', score.id);
+        $.each(data, function(i, current) {
+          localStorage.setItem('idGame', current.id);
         });
       }
     )
@@ -175,8 +175,28 @@ function newGame(id) {
 }
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-function saveGame(id) {
-  var saveGame = JSON.stringify(game);
-  alert(saveGame);
-  alert(localStorage.getItem('idGame'));
+function saveGame() {
+  //evalua que se haya creado un juego para guardar
+  if (window.location.pathname == "/game") {
+    var saveGame = JSON.stringify(game);
+    $.ajax({
+      url: '/api/game/' + 7 //localStorage.getItem('idGame')+
+        +
+        '?score=' + JSON.parse(saveGame).score +
+        '&gameBoard=' + saveGame,
+      type: 'PUT',
+
+      success: function() {
+        alert('Saved');
+      },
+      error: function() {
+        alert('Está mal');
+      }
+    });
+  } else {
+    if (confirm('              Nothing to save.\n'+
+    'Do you want create a new game?')) {
+      newGame(localStorage.getItem('idUser'));
+    };
+  };
 }

@@ -36,6 +36,7 @@ class GameController extends Controller
                 $game = new Game();
 
                 $game->idUser = $request->idUser;
+                //Omitido puesto que la BBDD le asigna un valor por defecto
                 //$game->score = $request->score;
 
                 $game->save();

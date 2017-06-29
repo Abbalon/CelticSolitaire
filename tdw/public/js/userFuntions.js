@@ -138,33 +138,45 @@ function dropUser(id) {
 }
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+function loadView() {
+  window.location.assign("/game");
+}
+
 function newGame(id) {
-  //create a new game
-  /*$.ajax({
-    url: '/game'+
-    '?idUser=' + id,
-    type: 'POST',
+  loadView();
+  if (window.location.pathname != "/game") {
+    //create a new game
+    /*$.ajax({
+      url: '/api/game'+
+      '?idUser=' + id,
+      type: 'POST',
 
-    success: function() {
-      $('#feetDiv').append(
-        ''
-      );
-    },
-    error: function() {
-      alert('Está mal');
-    }
-  })*/
+      success: function() {
+        $('#feetDiv').append(
+          ''
+        );
+      },
+      error: function() {
+        alert('Algo fue mal');
+      }
+    });
+    */
 
-  $.getJSON(
-    '/api/game?id=' + id,
-    function(data) {
-      alert('test');
-    }
-  )
+    //Recuperamos la id de la partida creada
+    $.getJSON(
+      '/api/game?id=' + id,
+      function(data) {
+        $.each(data, function(i, score) {
+          localStorage.setItem('idGame', score.id);
+        });
+      }
+    )
+  }
 }
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 function saveGame(id) {
   var saveGame = JSON.stringify(game);
   alert(saveGame);
+  alert(localStorage.getItem('idGame'));
 }

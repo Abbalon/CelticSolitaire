@@ -110,7 +110,7 @@
                 </li>
                 <li><a class="drop" href="#">Play</a>
                     <ul id="menuPlay">
-                        <li><a href="/game" onclick="javascript:newGame({{ Auth::user()->id }})">New</a></li>
+                        <li><a onclick="javascript:newGame({{ Auth::user()->id }})">New</a></li>
                         <li><a onclick="javascript:saveGame({{ Auth::user()->id }})">Save</a></li>
                         <li><a href="#">Restore last</a></li>
                     </ul>

@@ -156,7 +156,7 @@ class GameController extends Controller
      */
     public function SelectAll(Request $request)
     {
-        //$score = $request->id;
+        $score = $request->id;
         $scores = DB::table('games')->where('idUser', $request->id)
             ->orderBy('created_at', 'desc')->take(1)->get();
 
@@ -223,30 +223,30 @@ class GameController extends Controller
     }
 
     /**
-     * TODO
-     *
      * Restore the game
      *
      * $request->score
      *
      * @param  Request $request
-     * @param Integer $id
      *
      * @return Response
      */
-    public function Restore($id, Request $request)
+    public function Restore(Request $request)
     {
         try {
-            if ($request->score <> null
+            if ($request->idUser <> null
             ) {
-                $rows = DB::table('games')->where('id', $id)->update('score', $request->score);
+                $match = DB::table('games')
+                  ->select('gameBoard')
+                  ->where('idUser', $request->idUser)
+                  ->orderBy('created_at', 'desc')
+                  ->take(1)
+                  ->get();
 
                 return response()->json(
-                    [
-                        'Rows afected' => $rows,
-                        "statusCode" => "<h1>202</h1>"
-                    ],
-                    202
+                    $match
+                    ,
+                    200
                 );
             } else {
                 return response()->json(

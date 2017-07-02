@@ -112,7 +112,7 @@
                     <ul id="menuPlay">
                         <li><a onclick="javascript:newGame({{ Auth::user()->id }})">New</a></li>
                         <li><a onclick="javascript:saveGame({{ Auth::user()->id }})">Save</a></li>
-                        <li><a href="#">Restore last</a></li>
+                        <li><a onclick="javascript:restoreGame()">Restore last</a></li>
                     </ul>
                 </li>
               @else

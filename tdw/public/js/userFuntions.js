@@ -1,10 +1,17 @@
 $(document).ready(function() {
   //$("#userRow3").hide();
-  localStorage.setItem('idUser', window.location.search.substr(4));
-  var idUser = localStorage.getItem('idUser');
+  getUserId();
   getScore(idUser);
 });
+<!-- ################################################################################################ -->
+function getUserId(){
 
+  if (!localStorage.getItem('idUser')) {
+      localStorage.setItem('idUser', window.location.search.substr(4));
+      var idUser = localStorage.getItem('idUser');
+  }
+}
+<!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 function getScore(id) { //GameController.
   //var id = window.location.search.substr(4);
@@ -195,6 +202,28 @@ function saveGame() {
     });
   } else {
     if (confirm('              Nothing to save.\n'+
+    'Do you want create a new game?')) {
+      newGame(localStorage.getItem('idUser'));
+    };
+  };
+}<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+function restoreGame() {
+  //evalua que se haya creado un juego para restablecer
+  if (window.location.pathname == "/game") {
+    $.getJSON(
+      '/api/restore?idUser=' + idUser,
+      function(data) {
+        alert(data);
+        /*
+        $.each(data, function(i, current) {
+          localStorage.setItem('idGame', current.id);
+        });
+        */
+      }
+    );
+  } else {
+    if (confirm('              Nothing to restore.\n'+
     'Do you want create a new game?')) {
       newGame(localStorage.getItem('idUser'));
     };

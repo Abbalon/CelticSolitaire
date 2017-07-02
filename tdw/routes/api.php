@@ -13,12 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-/*
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-*/
-
 Route::get('/admin', 'UserController@ListValidatePlayer');
 Route::get('/admin/average', 'UserController@ListAverage');
 Route::get('/users', 'UserController@SelectAll');
@@ -37,12 +31,10 @@ Route::post('/user', 'UserController@NewUser');
 
 Route::post('/game', 'GameController@NewGame');//create new game
 
-//Route::get('/admin/average', 'GameController@ListAverage');
-Route::get('/game/dates', 'GameController@SelectBetween');
-Route::get('/game/{id}', 'GameController@SelectScores');
-Route::get('/game', 'GameController@SelectAll');
+Route::get('/game/dates', 'GameController@SelectBetween');//Shows all match between 2 dates
+Route::get('/game/{id}', 'GameController@SelectScores');//Shows the best 5
+Route::get('/game', 'GameController@SelectAll');//Shows the last
 
 Route::put('/game/{id}', 'GameController@Save');//updateGame
-//TODO Restore
 
-//Route::get('/login','AccessController@GetAccess');
+Route::get('/restore', 'GameController@Restore');//restore the match

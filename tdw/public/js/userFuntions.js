@@ -5,7 +5,7 @@ if (!localStorage.getItem('idUser')) {
 var idUser = localStorage.getItem('idUser');
 
 $(document).ready(function() {
-  //$("#userRow3").hide();
+  $("#userRow3").hide();
   getScore(idUser);
   //restoreGame();
 });

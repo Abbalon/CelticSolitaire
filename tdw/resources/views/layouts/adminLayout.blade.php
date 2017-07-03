@@ -15,6 +15,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/layout.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/jquery-ui.css') }}" rel="Stylesheet"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

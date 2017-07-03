@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d89bd33-8b08-42c5-936a-e71f1d7be2a3" name="Default" comment="reformat&#10;newGame&#10;saveGame&#10;logout after register">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/html.iml" afterPath="$PROJECT_DIR$/.idea/html.iml" />
+    <list default="true" id="3d89bd33-8b08-42c5-936a-e71f1d7be2a3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/RegisterController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/app/Http/Controllers/GameController.php" afterPath="$PROJECT_DIR$/tdw/app/Http/Controllers/GameController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/tdw/database/migrations/2014_10_12_000000_create_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/database/migrations/2017_05_31_170316_create_games_table.php" afterPath="$PROJECT_DIR$/tdw/database/migrations/2017_05_31_170316_create_games_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/public/js/userFuntions.js" afterPath="$PROJECT_DIR$/tdw/public/js/userFuntions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/routes/api.php" afterPath="$PROJECT_DIR$/tdw/routes/api.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,8 +57,8 @@
           <file leaf-file-name="userFuntions.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tdw/public/js/userFuntions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="177">
-                  <caret line="216" column="44" lean-forward="true" selection-start-line="216" selection-start-column="44" selection-end-line="216" selection-end-column="44" />
+                <state relative-caret-position="2985">
+                  <caret line="199" column="34" lean-forward="false" selection-start-line="199" selection-start-column="34" selection-end-line="199" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -73,7 +67,7 @@
           <file leaf-file-name="GameController.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/GameController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-795">
+                <state relative-caret-position="-3000">
                   <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
                   <folding />
                 </state>
@@ -112,7 +106,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response9.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response11.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -6897,7 +6891,7 @@
       <workItem from="1496756961626" duration="1615000" />
       <workItem from="1496826732485" duration="933000" />
       <workItem from="1496831809967" duration="1266000" />
-      <workItem from="1499103214369" duration="2153000" />
+      <workItem from="1499103214369" duration="4006000" />
     </task>
     <task id="LOCAL-00001" summary="Login DONE&#10;Register TODO">
       <created>1496415019113</created>
@@ -6934,11 +6928,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496704177175</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="reformat&#10;newGame&#10;saveGame&#10;logout after register">
+      <created>1499106283701</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1499106283701</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137185000" />
+    <option name="totallyTimeSpent" value="139038000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -7326,14 +7327,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/GameController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-795">
-          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tdw/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-120">
@@ -7342,10 +7335,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/GameController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3000">
+          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tdw/public/js/userFuntions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="216" column="44" lean-forward="true" selection-start-line="216" selection-start-column="44" selection-end-line="216" selection-end-column="44" />
+        <state relative-caret-position="2985">
+          <caret line="199" column="34" lean-forward="false" selection-start-line="199" selection-start-column="34" selection-end-line="199" selection-end-column="34" />
           <folding />
         </state>
       </provider>

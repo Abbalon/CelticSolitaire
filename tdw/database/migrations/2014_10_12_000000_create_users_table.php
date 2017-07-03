@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->boolean('isDelete')->default(0);
             $table->string('email',80);
             $table->string('password');
+            $table->string('telf', 12)->default('11111');
             $table->unique('email');
             $table->rememberToken();
             $table->timestamps();

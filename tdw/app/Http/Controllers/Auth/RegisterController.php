@@ -27,7 +27,15 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
+    //protected $redirectTo = '/';
+    public function redirectTo()
+    {
+
+        $message = "Wait to be enable";
+        echo "<script type='text/javascript'>alert('$message');</script>";
+        Auth::logout();
+        return '/';
+    }
 
     /**
      * Create a new controller instance.

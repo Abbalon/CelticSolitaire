@@ -30,7 +30,6 @@ Route::delete('/admin/{id}', 'UserController@DeleteUser');
 Route::post('/admin', 'UserController@NewUser');
 Route::post('/user', 'UserController@NewUser');
 
-Route::post('/game', 'GameController@NewGame');//create new game
 
 Route::get('/game/dates', 'GameController@SelectBetween');//Shows all match between 2 dates
 Route::get('/game/{id}', 'GameController@SelectScores');//Shows the best 5
@@ -41,3 +40,5 @@ Route::put('/game/{id}', 'GameController@Save');//updateGame
 Route::get('/restore', 'GameController@Restore');//restore the match
 
 Route::delete('/game/{id}', 'GameController@DeleteMatch');
+
+Route::post('/newGame', 'GameController@NewGame');//create new game

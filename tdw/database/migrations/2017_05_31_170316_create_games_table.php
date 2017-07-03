@@ -26,7 +26,7 @@ class CreateGamesTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('idUser');
             $table->integer('score')->default(0);
-            $table->string('gameBoard');
+            $table->longtext('gameBoard')->nullable();
             $table->timestamps();
             $table->unique(['id', 'idUser']);
         });

@@ -30,9 +30,7 @@ class GameController extends Controller
     {
         try {
 
-            if ($request->idUser <> null &&
-                $request->score <> null
-            ) {
+            if ($request->idUser <> null) {
                 $game = new Game();
 
                 $game->idUser = $request->idUser;
@@ -141,6 +139,7 @@ class GameController extends Controller
             return response()->json(
                 [
                     "ServerMessage" => "No rows found",
+                    "method" => "SelectScores",
                     "StatusQuery" => "Correct"
                 ], 200
             );
@@ -170,6 +169,7 @@ class GameController extends Controller
             return response()->json(
                 [
                     "ServerMessage " => "No rows found",
+                    "method" => "SelectLast",
                     "Data found" => $score,
                     "StatusQuery" => "Correct"
                 ], 200
@@ -259,7 +259,7 @@ class GameController extends Controller
         } catch (QueryException $e) {
             return response()->json(
                 [
-                    "exceptionText" =>$e,
+                    "exceptionText" => $e,
                     "statusText" => "<h2>Algo fue mal, avise al administrador.</h2>",
                     "statusCode" => "<h1>400</h1>"
                 ],
@@ -283,11 +283,11 @@ class GameController extends Controller
             if ($request->idUser <> null
             ) {
                 $match = DB::table('games')
-                  ->select('gameBoard')
-                  ->where('idUser', $request->idUser)
-                  ->orderBy('created_at', 'desc')
-                  ->take(1)
-                  ->get();
+                    ->select('gameBoard')
+                    ->where('idUser', $request->idUser)
+                    ->orderBy('created_at', 'desc')
+                    ->take(1)
+                    ->get();
 
                 return response()->json(
                     $match

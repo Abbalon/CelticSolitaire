@@ -154,36 +154,6 @@ class GameController extends Controller
      *
      * @return Response
      */
-    public function top(Request $request)
-    {
-        $score = $request->id;
-        $scores = DB::table('games')->where('idUser', $request->id)
-            ->orderBy('created_at', 'desc')->take(1)->get();
-
-        if ($scores <> "[]") {
-            return response()->json(
-
-                $scores
-                , 200
-            );
-        } else {
-            return response()->json(
-                [
-                    "ServerMessage " => "No rows found",
-                    "Data found" => $score,
-                    "StatusQuery" => "Correct"
-                ], 200
-            );
-        }
-    }
-
-    /**
-     * Shows scores
-     *
-     * @param Request request
-     *
-     * @return Response
-     */
     public function SelectAll(Request $request)
     {
         $score = $request->id;

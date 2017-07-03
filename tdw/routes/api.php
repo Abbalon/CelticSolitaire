@@ -17,7 +17,6 @@ Route::get('/admin', 'UserController@ListValidatePlayer');
 Route::get('/admin/average', 'UserController@ListAverage');
 Route::get('/users', 'UserController@SelectAll');
 Route::get('/user/{id}', 'UserController@SelectById');
-Route::get('/user/top', 'GameController@top');
 Route::get('/admin/{id}', 'UserController@SelectById');
 
 Route::put('/admin/{id}', 'UserController@UpdateUser');

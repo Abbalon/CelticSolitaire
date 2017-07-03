@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $("#adminRow3").hide();
+  $("#adminRow4").hide();
 });
 
 <!-- ################################################################################################ -->
@@ -71,20 +72,91 @@ $('#top10').click(function() {
   */
 
   $('#options').prepend(
-    '<div class="one_half first">' +
+    '<form name="formTop" class="form-horizontal" role="form" method="POST" action="javascript:SelectBetween(document.formTop);">' +
+    '<div class="one_third first">' +
     '<article>' +
     '<h3 class="font-x1"><i class="fa fa-random"></i> &nbsp; Seleccione fecha de início</h3>' +
-    '<input type="text" name="fecha" id="fechaIni" readonly="readonly" size="12" />' +
+    '<input type="text" name="fecha" id="firstDate" size="12" />' +
     '</article>' +
     '</div>' +
-    '<div class="one_half">' +
+    '<div class="one_third">' +
     '<article>' +
     '<h3 class="font-x1"><i class="fa fa-random"></i> &nbsp; Seleccione fecha de fin</h3>' +
-    '<input type="text" name="fecha" id="fechaFin" readonly="readonly" size="12" />' +
+    '<input type="text" name="fecha" id="lastDate" size="12" />' +
     '</article>' +
-    '</div>'
+    '</div>' +
+    '<div class="one_third left">' +
+    '<button type="submit" class="btn btn-primary">' +
+    'Search' +
+    '</button>' +
+    '</div>' +
+    '</div>' +
+    '</form>'
   );
 });
+
+function SelectBetween(request) {
+  $('#extend').empty();
+
+  $('#adminRow4').show(1000);
+
+  $.getJSON(
+    '/api/game/dates' +
+    '?firstDate=' + request.firstDate.value +
+    '&lastDate=' + request.lastDate.value,
+    function(data) {
+
+      $('#extend').prepend(
+        '<div class="wrapper row4">' +
+        '<div class="spacer">' +
+        '<div class="container clear"> ' +
+        '<article id="gamesResult">' +
+        '<h3 class="font-x2">' +
+        '<i class="fa fa-database"></i>' +
+        ' &nbsp; Matchs between ' + request.firstDate.value + ' & ' + request.lastDate.value +
+        '</h3>' +
+        '<div class="row">' +
+        '<div id="idUser" class="col-xs-3 font-x1 one_quarter first">' +
+        '<p class="nospace"> Id User ' +
+        '</p></div>' +
+
+        '<div id="score" class="col-xs-3 font-x1 one_half">' +
+        '<p class="nospace"> Score' +
+        '</p></div>' +
+        '</div>' +
+        '<hr>'
+      );
+
+      $.each(data, function(i, current) {
+        $('#gamesResult').append(
+          '<div class="row">' +
+          '<div id="name" class="col-xs-3 one_quarter first">' +
+          '<p class="nospace"> <i class="fa fa-arrow-right"></i> &nbsp;' + current.idUser +
+          '</p></div>' +
+
+          '<div id="email" class="col-xs-3 one_half">' +
+          '<p class="nospace"> <i class="fa fa-arrow-right"></i> &nbsp;' + current.score +
+          '</p></div>' +
+          '<div class="col-xs-1 one_quarter">' +
+          '<div class="one_half first">' +
+          '<button onclick="seeUser(' + current.idUser.value + ');" type="submit" class="btn btn-info">Show' +
+          '</button>' +
+          '</div>' +
+          '</div>' +
+          '</div>' +
+          '<hr>');
+      });
+
+      $('#extend').append(
+        '</article>' +
+        '</div>' +
+        '</div>' +
+        '</div>'
+      );
+
+    }
+  )
+}
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 $('#crudUser').click(function() {

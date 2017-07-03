@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3d89bd33-8b08-42c5-936a-e71f1d7be2a3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/public/js/userFuntions.js" afterPath="$PROJECT_DIR$/tdw/public/js/userFuntions.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,14 +51,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.8447155">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="userFuntions.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tdw/public/js/userFuntions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2985">
-                  <caret line="199" column="34" lean-forward="false" selection-start-line="199" selection-start-column="34" selection-end-line="199" selection-end-column="34" />
+                <state relative-caret-position="2940">
+                  <caret line="196" column="55" lean-forward="true" selection-start-line="196" selection-start-column="55" selection-end-line="196" selection-end-column="55" />
                   <folding />
                 </state>
               </provider>
@@ -6890,7 +6891,7 @@
       <workItem from="1496756961626" duration="1615000" />
       <workItem from="1496826732485" duration="933000" />
       <workItem from="1496831809967" duration="1266000" />
-      <workItem from="1499103214369" duration="4171000" />
+      <workItem from="1499103214369" duration="6046000" />
     </task>
     <task id="LOCAL-00001" summary="Login DONE&#10;Register TODO">
       <created>1496415019113</created>
@@ -6941,11 +6942,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499108189356</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="reformat&#10;newGame DONE&#10;saveGame DONE&#10;update localstorage TODO">
+      <created>1499108302292</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1499108302292</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139203000" />
+    <option name="totallyTimeSpent" value="141078000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -7352,8 +7360,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tdw/public/js/userFuntions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2985">
-          <caret line="199" column="34" lean-forward="false" selection-start-line="199" selection-start-column="34" selection-end-line="199" selection-end-column="34" />
+        <state relative-caret-position="2940">
+          <caret line="196" column="55" lean-forward="true" selection-start-line="196" selection-start-column="55" selection-end-line="196" selection-end-column="55" />
           <folding />
         </state>
       </provider>

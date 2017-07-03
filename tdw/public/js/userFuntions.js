@@ -1,16 +1,42 @@
 var idUser = 0;
-if (!localStorage.getItem('idUser')) {
-    localStorage.setItem('idUser', window.location.search.substr(4));
-}
-if (localStorage.getItem('idUser') != "")
-    idUser = localStorage.getItem('idUser');
 
 $(document).ready(function () {
     //$("#userRow3").hide();
+    listenUsers(window.location.search.substr(4));
     getScore(idUser);
     getIdGame();
     //restoreGame();
 });
+<!-- ################################################################################################ -->
+
+/**
+ * Comprueba si ha cambiado el usuario
+ */
+function listenUsers(id) {
+    if (id != "") {
+        if (!localStorage.getItem('idUser')) {
+            localStorage.setItem('idUser', id);
+        }
+        if (localStorage.getItem('idUser') != idUser) {
+            idUser = localStorage.getItem('idUser');
+        }
+    }
+}
+
+/**
+ * Guarda la id de la última partida
+ */
+function getIdGame() {
+    //Recuperamos la id de la partida creada
+    $.getJSON(
+        '/api/game?id=' + localStorage.getItem('idUser'),//id
+        function (data) {
+            $.each(data, function (i, current) {
+                localStorage.setItem('idGame', current.id);
+            });
+        }
+    )
+}
 
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -152,6 +178,7 @@ function loadView() {
 
 function newGame(id) {
     loadView();
+    preCharge = localStorage.getItem('idGame');
     if (window.location.pathname != "/game") {
         //create a new game
         $.ajax({
@@ -167,22 +194,8 @@ function newGame(id) {
             }
         });
     }
-    getIdGame();
-}
-
-/**
- * Guarda la id de la última partida
- */
-function getIdGame() {
-    //Recuperamos la id de la partida creada
-    $.getJSON(
-        '/api/game?id=' + localStorage.getItem('idUser'),//id
-        function (data) {
-            $.each(data, function (i, current) {
-                localStorage.setItem('idGame', current.id);
-            });
-        }
-    )
+    while (localStorage.getItem('idGame') != preCharge)
+        getIdGame();
 }
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->

@@ -306,7 +306,8 @@ class UserController extends Controller
         } catch (ModelNotFoundException $e) {
             return response()->json(
                 [
-                    "statusText" => "<h2>No se ha encontrado la id solicitada</h2>",
+                    "statusText" => "<h2>No se ha encontrado la id solicitada</h2>:)",
+                    "enterMessage" => $id,
                     "statusCode" => "<h1>404</h1>"
                 ],
                 404

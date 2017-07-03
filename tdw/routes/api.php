@@ -15,6 +15,7 @@ use Illuminate\Http\Request;
 
 Route::get('/admin', 'UserController@ListValidatePlayer');
 Route::get('/admin/average', 'UserController@ListAverage');
+Route::get('/admin/game', 'GameController@SelectAll');//Shows all games
 Route::get('/users', 'UserController@SelectAll');
 Route::get('/user/{id}', 'UserController@SelectById');
 Route::get('/admin/{id}', 'UserController@SelectById');
@@ -33,8 +34,10 @@ Route::post('/game', 'GameController@NewGame');//create new game
 
 Route::get('/game/dates', 'GameController@SelectBetween');//Shows all match between 2 dates
 Route::get('/game/{id}', 'GameController@SelectScores');//Shows the best 5
-Route::get('/game', 'GameController@SelectAll');//Shows the last
+Route::get('/game', 'GameController@SelectLast');//Shows the last
 
 Route::put('/game/{id}', 'GameController@Save');//updateGame
 
 Route::get('/restore', 'GameController@Restore');//restore the match
+
+Route::delete('/game/{id}', 'GameController@DeleteMatch');

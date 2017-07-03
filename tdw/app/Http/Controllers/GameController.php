@@ -148,13 +148,13 @@ class GameController extends Controller
     }
 
     /**
-     * Shows scores
+     * Shows the last score
      *
-     * @param Request request
+     * @param Request request->id
      *
      * @return Response
      */
-    public function SelectAll(Request $request)
+    public function SelectLast(Request $request)
     {
         $score = $request->id;
         $scores = DB::table('games')->where('idUser', $request->id)
@@ -175,6 +175,52 @@ class GameController extends Controller
                 ], 200
             );
         }
+    }
+
+    /**
+     * Shows all scores
+     *
+     * @return Response
+     */
+    public function SelectAll()
+    {
+        $scores = DB::table('games')
+            ->orderBy('created_at', 'desc')->get();
+
+        if ($scores <> "[]") {
+            return response()->json(
+
+                $scores
+                , 200
+            );
+        } else {
+            return response()->json(
+                [
+                    "ServerMessage " => "No rows found",
+                    "StatusQuery" => "Correct"
+                ], 200
+            );
+        }
+    }
+
+    /**  ################################################################################################ */
+    /**  ################################################################################################ */
+    /**
+     * Delete a game by id.
+     *
+     * @return Response
+     */
+    public function DeleteMatch($id)
+    {
+        $rows = Game::where('id', $id)->delete();
+
+        return response()->json(
+            [
+                'Rows afected' => $rows,
+                "statusCode" => "<h1>202</h1>"
+            ],
+            202
+        );
     }
 
     /**

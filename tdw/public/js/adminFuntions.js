@@ -6,12 +6,11 @@ $(document).ready(function() {
 <!-- ################################################################################################ -->
 $('#validate').click(function() {
 
+  $("#adminRow4").hide();
+
   $.getJSON(
     '/api/admin',
     function(data) {
-
-      $('#options').empty();
-
       $('#adminRow3').show(1000);
 
       $('#options').prepend(
@@ -49,9 +48,8 @@ function validateUser(id) {
     type: 'PUT',
 
     success: function() {
-      $('#feetDiv').append(
-        ''
-      );
+      alert('Done');
+      $("#adminRow3").hide();
     },
     error: function() {
       alert('Está mal');
@@ -61,6 +59,8 @@ function validateUser(id) {
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 $('#top10').click(function() {
+
+  $("#adminRow4").hide();
 
   $('#options').empty();
 
@@ -159,7 +159,94 @@ function SelectBetween(request) {
 }
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+$('#crudGame').click(function() {
+
+  $("#adminRow4").hide();
+
+  $("#adminRow4").hide();
+
+  $.getJSON(
+    '/api/admin/game',
+    function(data) {
+
+      $('#options').empty();
+
+      $('#adminRow3').show(1000);
+
+      $('#options').prepend(
+        '<article>' +
+        '<h3 class="font-x2"><i class="fa fa-database"></i> &nbsp; Matchs played</h3>' +
+        '<div class="row">' +
+        '<div id="idMatch" class="col-xs-3 font-x1 one_quarter first">' +
+        '<p class="nospace"> Id match ' +
+        '</p></div>' +
+
+        '<div id="idUser" class="col-xs-3 font-x1 one_quarter">' +
+        '<p class="nospace"> Id user' +
+        '</p></div>' +
+
+        '<div id="matchScore" class="col-xs-3 font-x1 one_quarter">' +
+        '<p class="nospace"> Score' +
+        '</p></div>' +
+
+        '</div>' +
+        '<hr>'
+      );
+
+      $.each(data, function(i, game) {
+        $('#options').append('' +
+          '<div class="row">' +
+          '<div id="name" class="col-xs-3 one_quarter first">' +
+          '<p class="nospace"> <i class="fa fa-arrow-right"></i> &nbsp;' + game.id +
+          '</p></div>' +
+
+          '<div id="email" class="col-xs-3 one_quarter">' +
+          '<p class="nospace"> <i class="fa fa-arrow-right"></i> &nbsp;' + game.idUser +
+          '</p></div>' +
+
+          '<div id="email" class="col-xs-3 one_quarter">' +
+          '<p class="nospace"> <i class="fa fa-arrow-right"></i> &nbsp;' + game.score +
+          '</p></div>' +
+
+          '<div class="col-xs-1 one_quarter">' +
+          '<div class="one_half first">' +
+          '<button onclick="deleteMatch(' + game.id + ');" type="submit" class="btn btn-danger">Drop' +
+          '</button>' +
+          '</div>' +
+          '</div>' +
+          '</div>' +
+          '<hr>');
+      });
+
+      $('#options').append(
+        '</article>'
+      );
+    });
+});
+
+function deleteMatch(id) {
+  if (confirm('Are you sure?')) {
+    $.ajax({
+      url: '/api/game/' + id,
+      type: 'DELETE',
+
+      success: function() {
+        $('#feetDiv').append(
+          ''
+        );
+      },
+      error: function() {
+        alert('Está mal');
+      }
+    });
+    window.location.href = "/admin";
+  };
+}
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
 $('#crudUser').click(function() {
+
+  $("#adminRow4").hide();
 
   $.getJSON(
     '/api/users',
@@ -308,7 +395,6 @@ function deleteUser(id) {
 };
 <!-- ################################################################################################ -->
 function hardUser(id) {
-  alert('DeleteUser')
   if (confirm('Are you sure?')) {
     $.ajax({
       url: '/api/admin/' + id,
@@ -330,6 +416,8 @@ function hardUser(id) {
 <!-- ################################################################################################ -->
 $('#showAverage').click(
   function() {
+
+    $("#adminRow4").hide();
 
     $.getJSON(
       '/api/admin/average',

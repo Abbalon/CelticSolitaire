@@ -1,21 +1,19 @@
+if (!localStorage.getItem('idUser')) {
+  localStorage.setItem('idUser', window.location.search.substr(4));
+}
+
+var idUser = localStorage.getItem('idUser');
+
 $(document).ready(function() {
   //$("#userRow3").hide();
-  getUserId();
   getScore(idUser);
+  //restoreGame();
 });
-<!-- ################################################################################################ -->
-function getUserId(){
 
-  if (!localStorage.getItem('idUser')) {
-      localStorage.setItem('idUser', window.location.search.substr(4));
-      var idUser = localStorage.getItem('idUser');
-  }
-}
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 function getScore(id) { //GameController.
   //var id = window.location.search.substr(4);
-
   if (id != "") {
     $.getJSON(
       '/api/game?id=' + id,
@@ -201,12 +199,12 @@ function saveGame() {
       }
     });
   } else {
-    if (confirm('              Nothing to save.\n'+
-    'Do you want create a new game?')) {
+    if (confirm('              Nothing to save.\n' +
+        'Do you want create a new game?')) {
       newGame(localStorage.getItem('idUser'));
     };
   };
-}<!-- ################################################################################################ -->
+} <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 function restoreGame() {
   //evalua que se haya creado un juego para restablecer
@@ -214,17 +212,22 @@ function restoreGame() {
     $.getJSON(
       '/api/restore?idUser=' + idUser,
       function(data) {
-        alert(data);
-        /*
-        $.each(data, function(i, current) {
-          localStorage.setItem('idGame', current.id);
-        });
-        */
+        let restoredGame = JSON.parse(data[0].gameBoard);
+        //alert(restoredGame.score);
+        game.custom = restoredGame.custom;
+        game.Latitudes = restoredGame.Latitudes;
+        game.previous = restoredGame.previous;
+        game.current = restoredGame.current;
+        game.timer = restoredGame.timer;
+        game.time = restoredGame.time;
+        game.score = restoredGame.score;
+
+        game.displayGame();
       }
     );
   } else {
-    if (confirm('              Nothing to restore.\n'+
-    'Do you want create a new game?')) {
+    if (confirm('              Nothing to restore.\n' +
+        'Do you want create a new game?')) {
       newGame(localStorage.getItem('idUser'));
     };
   };

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3d89bd33-8b08-42c5-936a-e71f1d7be2a3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/public/js/userFuntions.js" afterPath="$PROJECT_DIR$/tdw/public/js/userFuntions.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -6891,7 +6890,7 @@
       <workItem from="1496756961626" duration="1615000" />
       <workItem from="1496826732485" duration="933000" />
       <workItem from="1496831809967" duration="1266000" />
-      <workItem from="1499103214369" duration="4006000" />
+      <workItem from="1499103214369" duration="4171000" />
     </task>
     <task id="LOCAL-00001" summary="Login DONE&#10;Register TODO">
       <created>1496415019113</created>
@@ -6935,11 +6934,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499106283701</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="reformat&#10;newGame DONE&#10;saveGame DONE&#10;update localstorage TODO">
+      <created>1499108189356</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1499108189356</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139038000" />
+    <option name="totallyTimeSpent" value="139203000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -7031,7 +7037,8 @@
     <MESSAGE value="reformat&#10;view game not funtional TODO" />
     <MESSAGE value="reformat&#10;admin validate DONE&#10;show users/profile DONE&#10;show scores between dates TODO" />
     <MESSAGE value="reformat&#10;newGame&#10;saveGame&#10;logout after register" />
-    <option name="LAST_COMMIT_MESSAGE" value="reformat&#10;newGame&#10;saveGame&#10;logout after register" />
+    <MESSAGE value="reformat&#10;newGame DONE&#10;saveGame DONE&#10;update localstorage TODO" />
+    <option name="LAST_COMMIT_MESSAGE" value="reformat&#10;newGame DONE&#10;saveGame DONE&#10;update localstorage TODO" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

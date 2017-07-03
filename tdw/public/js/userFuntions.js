@@ -3,8 +3,7 @@ var idUser = 0;
 $(document).ready(function () {
     //$("#userRow3").hide();
     listenUsers(window.location.search.substr(4));
-    getScore(idUser);
-    getIdGame();
+    getScore(localStorage.getItem('idUser'));
     //restoreGame();
 });
 <!-- ################################################################################################ -->
@@ -17,8 +16,10 @@ function listenUsers(id) {
         if (!localStorage.getItem('idUser')) {
             localStorage.setItem('idUser', id);
         }
-        if (localStorage.getItem('idUser') != idUser) {
+        if (localStorage.getItem('idUser') != id) {
+            localStorage.setItem('idUser', id);
             idUser = localStorage.getItem('idUser');
+            getIdGame();
         }
     }
 }

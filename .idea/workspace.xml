@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3d89bd33-8b08-42c5-936a-e71f1d7be2a3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/RegisterController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/public/js/userFuntions.js" afterPath="$PROJECT_DIR$/tdw/public/js/userFuntions.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,9 +58,31 @@
           <file leaf-file-name="userFuntions.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tdw/public/js/userFuntions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2940">
-                  <caret line="196" column="55" lean-forward="true" selection-start-line="196" selection-start-column="55" selection-end-line="196" selection-end-column="55" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Game.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tdw/public/js/Game.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-450">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tdw/public/js/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-90">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -67,7 +90,7 @@
           <file leaf-file-name="GameController.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/GameController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-3000">
+                <state relative-caret-position="-975">
                   <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
                   <folding />
                 </state>
@@ -77,9 +100,45 @@
           <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tdw/routes/api.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-120">
+                <state relative-caret-position="-106">
                   <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="adminFuntions.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tdw/public/js/adminFuntions.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+                  <folding>
+                    <marker date="1499097788979" expanded="true" signature="452:458" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="710:716" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="871:877" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="2137:2143" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="2385:2391" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="3210:3216" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="3887:3893" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="4062:4068" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="5095:5101" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="5837:5843" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="6008:6014" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="6183:6189" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="7450:7456" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="8057:8063" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="8227:8233" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="9510:9516" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="9634:9640" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="9773:9779" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="9897:9903" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="10036:10042" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="10161:10167" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="10300:10306" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="12466:12472" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="13111:13117" ph=" " />
+                    <marker date="1499097788979" expanded="true" signature="13289:13295" ph=" " />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -106,7 +165,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response11.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response19.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -137,7 +196,6 @@
         <option value="$PROJECT_DIR$/tdw/database/migrations/2017_05_29_193839_create_games_table.php" />
         <option value="$PROJECT_DIR$/tdw/app/Http/Controllers/AccessCotroller.php" />
         <option value="$PROJECT_DIR$/tdw/app/Http/Controllers/AccessController.php" />
-        <option value="$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/tdw/app/User.php" />
         <option value="$PROJECT_DIR$/tdw/app/Game.php" />
         <option value="$PROJECT_DIR$/tdw/database/migrations/2014_10_12_000000_create_users_table.php" />
@@ -161,6 +219,7 @@
         <option value="$PROJECT_DIR$/tdw/routes/api.php" />
         <option value="$PROJECT_DIR$/tdw/database/migrations/2017_05_31_170316_create_games_table.php" />
         <option value="$PROJECT_DIR$/tdw/app/Http/Controllers/GameController.php" />
+        <option value="$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/tdw/public/js/userFuntions.js" />
       </list>
     </option>
@@ -540,6 +599,36 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tdw" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Auth" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -568,6 +657,684 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1496766927000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjM5WVFzTDJiWW9rYyttTytJTjdDSUE9PSIsInZhbHVlIjoiZ0ZtM0xNVGRwVmFaRmhOXC9scTlDUG92YUZVRGhySjI3dXE0S0t6KzZEXC9oN095MmVydUtYQUxGdzl1MElqOUZ5eWJsTW85cVN5OXpXc21Cd0RLTUtcL1E9PSIsIm1hYyI6IjNhMzBiYmVhZjAzYjc5ZDNiYTczMDYzMzM0NmFmMmM5YThiYmE2M2UyYTkwZDhjNmY0ZTJmZGYxMDA1NTczOGQifQ%3D%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1496766927000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ikd2aWdjMlFjOERKdHcyRWNvVEFYQUE9PSIsInZhbHVlIjoiWGNUNG45TlBBTkRjTkVQME9VK0NQbGlrV2pvcjByRW9ON0RkeXhYTkV5dnArTlVQNzlYbUtWeFlpR1wvTDZwZzA4YVoxQnl5RVwvWGE4ejhzTlwvcWFBOHc9PSIsIm1hYyI6IjI5MjI3Yzg2NjA3OTFjMTkwZWI4Mzk4MDIwYmIwMWVkZGE4Y2M2MTJjOWI0MjczMmI1NmVkMzE2YWM5NTMxODUifQ%3D%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/api/game/12" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="score" />
+                <option name="value" value="25000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="testValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="nickValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="mailVAlidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="pass" />
+                <option name="value" value="pass" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="testValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="nickValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="mailVAlidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="pass" />
+                <option name="value" value="pass" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="testValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="nickValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="mailVAlidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="pass" />
+                <option name="value" value="pass" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="testValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="nickValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="mailValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="pass" />
+                <option name="value" value="pass" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="bf0002" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="bf0002" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="bf0002" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="5" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="score" />
+                <option name="value" value="220" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="gameBoard" />
+                <option name="value" value="{%22custom%22:false,%22Latitudes%22:{%22row1%22:{%22idGb%22:%22row1%22,%22posiciones%22:[{%22id%22:%22b11%22,%22pos%22:%22uno%22,%22state%22:%22vacio%22},{%22id%22:%22b12%22,%22pos%22:%22dos%22,%22state%22:%22vacio%22},{%22id%22:%22b13%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b14%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b15%22,%22pos%22:%22cinco%22,%22state%22:%22imagen%22},{%22id%22:%22b16%22,%22pos%22:%22seis%22,%22state%22:%22vacio%22},{%22id%22:%22b17%22,%22pos%22:%22siete%22,%22state%22:%22vacio%22}]},%22row2%22:{%22idGb%22:%22row2%22,%22posiciones%22:[{%22id%22:%22b21%22,%22pos%22:%22uno%22,%22state%22:%22vacio%22},{%22id%22:%22b22%22,%22pos%22:%22dos%22,%22state%22:%22vacio%22},{%22id%22:%22b23%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b24%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b25%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b26%22,%22pos%22:%22seis%22,%22state%22:%22vacio%22},{%22id%22:%22b27%22,%22pos%22:%22siete%22,%22state%22:%22vacio%22}]},%22row3%22:{%22idGb%22:%22row3%22,%22posiciones%22:[{%22id%22:%22b31%22,%22pos%22:%22uno%22,%22state%22:%22hueco%22},{%22id%22:%22b32%22,%22pos%22:%22dos%22,%22state%22:%22hueco%22},{%22id%22:%22b33%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b34%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b35%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b36%22,%22pos%22:%22seis%22,%22state%22:%22hueco%22},{%22id%22:%22b37%22,%22pos%22:%22siete%22,%22state%22:%22imagen%22}]},%22row4%22:{%22idGb%22:%22row4%22,%22posiciones%22:[{%22id%22:%22b41%22,%22pos%22:%22uno%22,%22state%22:%22hueco%22},{%22id%22:%22b42%22,%22pos%22:%22dos%22,%22state%22:%22hueco%22},{%22id%22:%22b43%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b44%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b45%22,%22pos%22:%22cinco%22,%22state%22:%22imagen%22},{%22id%22:%22b46%22,%22pos%22:%22seis%22,%22state%22:%22hueco%22},{%22id%22:%22b47%22,%22pos%22:%22siete%22,%22state%22:%22hueco%22}]},%22row5%22:{%22idGb%22:%22row5%22,%22posiciones%22:[{%22id%22:%22b51%22,%22pos%22:%22uno%22,%22state%22:%22hueco%22},{%22id%22:%22b52%22,%22pos%22:%22dos%22,%22state%22:%22hueco%22},{%22id%22:%22b53%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b54%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b55%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b56%22,%22pos%22:%22seis%22,%22state%22:%22hueco%22},{%22id%22:%22b57%22,%22pos%22:%22siete%22,%22state%22:%22imagen%22}]},%22row6%22:{%22idGb%22:%22row6%22,%22posiciones%22:[{%22id%22:%22b61%22,%22pos%22:%22uno%22,%22state%22:%22vacio%22},{%22id%22:%22b62%22,%22pos%22:%22dos%22,%22state%22:%22vacio%22},{%22id%22:%22b63%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b64%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b65%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b66%22,%22pos%22:%22seis%22,%22state%22:%22vacio%22},{%22id%22:%22b67%22,%22pos%22:%22siete%22,%22state%22:%22vacio%22}]},%22row7%22:{%22idGb%22:%22row7%22,%22posiciones%22:[{%22id%22:%22b71%22,%22pos%22:%22uno%22,%22state%22:%22vacio%22},{%22id%22:%22b72%22,%22pos%22:%22dos%22,%22state%22:%22vacio%22},{%22id%22:%22b73%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b74%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b75%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b76%22,%22pos%22:%22seis%22,%22state%22:%22vacio%22},{%22id%22:%22b77%22,%22pos%22:%22siete%22,%22state%22:%22vacio%22}]}},%22previous%22:null,%22current%22:{%22id%22:%22b45%22,%22pos%22:%22cinco%22,%22state%22:%22imagen%22},%22timer%22:-1,%22time%22:true,%22score%22:220}" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="score" />
+                <option name="value" value="220" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="gameBoard" />
+                <option name="value" value="{%22custom%22:false,%22Latitudes%22:{%22row1%22:{%22idGb%22:%22row1%22,%22posiciones%22:[{%22id%22:%22b11%22,%22pos%22:%22uno%22,%22state%22:%22vacio%22},{%22id%22:%22b12%22,%22pos%22:%22dos%22,%22state%22:%22vacio%22},{%22id%22:%22b13%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b14%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b15%22,%22pos%22:%22cinco%22,%22state%22:%22imagen%22},{%22id%22:%22b16%22,%22pos%22:%22seis%22,%22state%22:%22vacio%22},{%22id%22:%22b17%22,%22pos%22:%22siete%22,%22state%22:%22vacio%22}]},%22row2%22:{%22idGb%22:%22row2%22,%22posiciones%22:[{%22id%22:%22b21%22,%22pos%22:%22uno%22,%22state%22:%22vacio%22},{%22id%22:%22b22%22,%22pos%22:%22dos%22,%22state%22:%22vacio%22},{%22id%22:%22b23%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b24%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b25%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b26%22,%22pos%22:%22seis%22,%22state%22:%22vacio%22},{%22id%22:%22b27%22,%22pos%22:%22siete%22,%22state%22:%22vacio%22}]},%22row3%22:{%22idGb%22:%22row3%22,%22posiciones%22:[{%22id%22:%22b31%22,%22pos%22:%22uno%22,%22state%22:%22hueco%22},{%22id%22:%22b32%22,%22pos%22:%22dos%22,%22state%22:%22hueco%22},{%22id%22:%22b33%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b34%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b35%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b36%22,%22pos%22:%22seis%22,%22state%22:%22hueco%22},{%22id%22:%22b37%22,%22pos%22:%22siete%22,%22state%22:%22imagen%22}]},%22row4%22:{%22idGb%22:%22row4%22,%22posiciones%22:[{%22id%22:%22b41%22,%22pos%22:%22uno%22,%22state%22:%22hueco%22},{%22id%22:%22b42%22,%22pos%22:%22dos%22,%22state%22:%22hueco%22},{%22id%22:%22b43%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b44%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b45%22,%22pos%22:%22cinco%22,%22state%22:%22imagen%22},{%22id%22:%22b46%22,%22pos%22:%22seis%22,%22state%22:%22hueco%22},{%22id%22:%22b47%22,%22pos%22:%22siete%22,%22state%22:%22hueco%22}]},%22row5%22:{%22idGb%22:%22row5%22,%22posiciones%22:[{%22id%22:%22b51%22,%22pos%22:%22uno%22,%22state%22:%22hueco%22},{%22id%22:%22b52%22,%22pos%22:%22dos%22,%22state%22:%22hueco%22},{%22id%22:%22b53%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b54%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b55%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b56%22,%22pos%22:%22seis%22,%22state%22:%22hueco%22},{%22id%22:%22b57%22,%22pos%22:%22siete%22,%22state%22:%22imagen%22}]},%22row6%22:{%22idGb%22:%22row6%22,%22posiciones%22:[{%22id%22:%22b61%22,%22pos%22:%22uno%22,%22state%22:%22vacio%22},{%22id%22:%22b62%22,%22pos%22:%22dos%22,%22state%22:%22vacio%22},{%22id%22:%22b63%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b64%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b65%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b66%22,%22pos%22:%22seis%22,%22state%22:%22vacio%22},{%22id%22:%22b67%22,%22pos%22:%22siete%22,%22state%22:%22vacio%22}]},%22row7%22:{%22idGb%22:%22row7%22,%22posiciones%22:[{%22id%22:%22b71%22,%22pos%22:%22uno%22,%22state%22:%22vacio%22},{%22id%22:%22b72%22,%22pos%22:%22dos%22,%22state%22:%22vacio%22},{%22id%22:%22b73%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b74%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b75%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b76%22,%22pos%22:%22seis%22,%22state%22:%22vacio%22},{%22id%22:%22b77%22,%22pos%22:%22siete%22,%22state%22:%22vacio%22}]}},%22previous%22:null,%22current%22:{%22id%22:%22b45%22,%22pos%22:%22cinco%22,%22state%22:%22imagen%22},%22timer%22:-1,%22time%22:true,%22score%22:220}" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1496766927000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjM5WVFzTDJiWW9rYyttTytJTjdDSUE9PSIsInZhbHVlIjoiZ0ZtM0xNVGRwVmFaRmhOXC9scTlDUG92YUZVRGhySjI3dXE0S0t6KzZEXC9oN095MmVydUtYQUxGdzl1MElqOUZ5eWJsTW85cVN5OXpXc21Cd0RLTUtcL1E9PSIsIm1hYyI6IjNhMzBiYmVhZjAzYjc5ZDNiYTczMDYzMzM0NmFmMmM5YThiYmE2M2UyYTkwZDhjNmY0ZTJmZGYxMDA1NTczOGQifQ%3D%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1496766927000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ikd2aWdjMlFjOERKdHcyRWNvVEFYQUE9PSIsInZhbHVlIjoiWGNUNG45TlBBTkRjTkVQME9VK0NQbGlrV2pvcjByRW9ON0RkeXhYTkV5dnArTlVQNzlYbUtWeFlpR1wvTDZwZzA4YVoxQnl5RVwvWGE4ejhzTlwvcWFBOHc9PSIsIm1hYyI6IjI5MjI3Yzg2NjA3OTFjMTkwZWI4Mzk4MDIwYmIwMWVkZGE4Y2M2MTJjOWI0MjczMmI1NmVkMzE2YWM5NTMxODUifQ%3D%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/api/game/undefined" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="score" />
+                <option name="value" value="25000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="testValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="nickValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="mailVAlidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="pass" />
+                <option name="value" value="pass" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="testValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="nickValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="mailVAlidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="pass" />
+                <option name="value" value="pass" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="testValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="nickValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="mailVAlidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="pass" />
+                <option name="value" value="pass" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="testValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="nickValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="mailValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="pass" />
+                <option name="value" value="pass" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="bf0002" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="bf0002" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="bf0002" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="5" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="score" />
+                <option name="value" value="220" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="gameBoard" />
+                <option name="value" value="{%22custom%22:false,%22Latitudes%22:{%22row1%22:{%22idGb%22:%22row1%22,%22posiciones%22:[{%22id%22:%22b11%22,%22pos%22:%22uno%22,%22state%22:%22vacio%22},{%22id%22:%22b12%22,%22pos%22:%22dos%22,%22state%22:%22vacio%22},{%22id%22:%22b13%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b14%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b15%22,%22pos%22:%22cinco%22,%22state%22:%22imagen%22},{%22id%22:%22b16%22,%22pos%22:%22seis%22,%22state%22:%22vacio%22},{%22id%22:%22b17%22,%22pos%22:%22siete%22,%22state%22:%22vacio%22}]},%22row2%22:{%22idGb%22:%22row2%22,%22posiciones%22:[{%22id%22:%22b21%22,%22pos%22:%22uno%22,%22state%22:%22vacio%22},{%22id%22:%22b22%22,%22pos%22:%22dos%22,%22state%22:%22vacio%22},{%22id%22:%22b23%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b24%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b25%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b26%22,%22pos%22:%22seis%22,%22state%22:%22vacio%22},{%22id%22:%22b27%22,%22pos%22:%22siete%22,%22state%22:%22vacio%22}]},%22row3%22:{%22idGb%22:%22row3%22,%22posiciones%22:[{%22id%22:%22b31%22,%22pos%22:%22uno%22,%22state%22:%22hueco%22},{%22id%22:%22b32%22,%22pos%22:%22dos%22,%22state%22:%22hueco%22},{%22id%22:%22b33%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b34%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b35%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b36%22,%22pos%22:%22seis%22,%22state%22:%22hueco%22},{%22id%22:%22b37%22,%22pos%22:%22siete%22,%22state%22:%22imagen%22}]},%22row4%22:{%22idGb%22:%22row4%22,%22posiciones%22:[{%22id%22:%22b41%22,%22pos%22:%22uno%22,%22state%22:%22hueco%22},{%22id%22:%22b42%22,%22pos%22:%22dos%22,%22state%22:%22hueco%22},{%22id%22:%22b43%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b44%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b45%22,%22pos%22:%22cinco%22,%22state%22:%22imagen%22},{%22id%22:%22b46%22,%22pos%22:%22seis%22,%22state%22:%22hueco%22},{%22id%22:%22b47%22,%22pos%22:%22siete%22,%22state%22:%22hueco%22}]},%22row5%22:{%22idGb%22:%22row5%22,%22posiciones%22:[{%22id%22:%22b51%22,%22pos%22:%22uno%22,%22state%22:%22hueco%22},{%22id%22:%22b52%22,%22pos%22:%22dos%22,%22state%22:%22hueco%22},{%22id%22:%22b53%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b54%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b55%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b56%22,%22pos%22:%22seis%22,%22state%22:%22hueco%22},{%22id%22:%22b57%22,%22pos%22:%22siete%22,%22state%22:%22imagen%22}]},%22row6%22:{%22idGb%22:%22row6%22,%22posiciones%22:[{%22id%22:%22b61%22,%22pos%22:%22uno%22,%22state%22:%22vacio%22},{%22id%22:%22b62%22,%22pos%22:%22dos%22,%22state%22:%22vacio%22},{%22id%22:%22b63%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b64%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b65%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b66%22,%22pos%22:%22seis%22,%22state%22:%22vacio%22},{%22id%22:%22b67%22,%22pos%22:%22siete%22,%22state%22:%22vacio%22}]},%22row7%22:{%22idGb%22:%22row7%22,%22posiciones%22:[{%22id%22:%22b71%22,%22pos%22:%22uno%22,%22state%22:%22vacio%22},{%22id%22:%22b72%22,%22pos%22:%22dos%22,%22state%22:%22vacio%22},{%22id%22:%22b73%22,%22pos%22:%22tres%22,%22state%22:%22hueco%22},{%22id%22:%22b74%22,%22pos%22:%22cuatro%22,%22state%22:%22hueco%22},{%22id%22:%22b75%22,%22pos%22:%22cinco%22,%22state%22:%22hueco%22},{%22id%22:%22b76%22,%22pos%22:%22seis%22,%22state%22:%22vacio%22},{%22id%22:%22b77%22,%22pos%22:%22siete%22,%22state%22:%22vacio%22}]}},%22previous%22:null,%22current%22:{%22id%22:%22b45%22,%22pos%22:%22cinco%22,%22state%22:%22imagen%22},%22timer%22:-1,%22time%22:true,%22score%22:220}" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1496766927000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjM5WVFzTDJiWW9rYyttTytJTjdDSUE9PSIsInZhbHVlIjoiZ0ZtM0xNVGRwVmFaRmhOXC9scTlDUG92YUZVRGhySjI3dXE0S0t6KzZEXC9oN095MmVydUtYQUxGdzl1MElqOUZ5eWJsTW85cVN5OXpXc21Cd0RLTUtcL1E9PSIsIm1hYyI6IjNhMzBiYmVhZjAzYjc5ZDNiYTczMDYzMzM0NmFmMmM5YThiYmE2M2UyYTkwZDhjNmY0ZTJmZGYxMDA1NTczOGQifQ%3D%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1496766927000" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="laravel_session" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ikd2aWdjMlFjOERKdHcyRWNvVEFYQUE9PSIsInZhbHVlIjoiWGNUNG45TlBBTkRjTkVQME9VK0NQbGlrV2pvcjByRW9ON0RkeXhYTkV5dnArTlVQNzlYbUtWeFlpR1wvTDZwZzA4YVoxQnl5RVwvWGE4ejhzTlwvcWFBOHc9PSIsIm1hYyI6IjI5MjI3Yzg2NjA3OTFjMTkwZWI4Mzk4MDIwYmIwMWVkZGE4Y2M2MTJjOWI0MjczMmI1NmVkMzE2YWM5NTMxODUifQ%3D%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/api/game" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="score" />
+                <option name="value" value="25000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="8" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="testValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="nickValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="mailVAlidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="pass" />
+                <option name="value" value="pass" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="testValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="nickValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="mailVAlidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="pass" />
+                <option name="value" value="pass" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="testValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="nickValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="mailVAlidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="pass" />
+                <option name="value" value="pass" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="name" />
+                <option name="value" value="testValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="nickValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="mailValidate" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="pass" />
+                <option name="value" value="pass" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="bf0002" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="bf0002" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="nick" />
+                <option name="value" value="bf0002" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="idUser" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="3" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="5" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="biscuits">
             <list>
@@ -6572,148 +7339,6 @@
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="1495639153000" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="XSRF-TOKEN" />
-                <option name="path" value="/" />
-                <option name="value" value="eyJpdiI6IlFXRzNrVHdzZFwvYkQrVzU4YzVpWEJRPT0iLCJ2YWx1ZSI6IjZ5b1wvNjNxTVhUeEU1c0tXSHZVNXY1NnBEeGpYR2pWbHo5QTQzU1V1Vkc2bm1DbGRJb2poMkRcL2JlN1RSdjEzZEJYOU1EUE9udjIyVkVzUVpRK1BqNWc9PSIsIm1hYyI6ImExZTUwOWZmMDJmYjQyNmZkZWM3NGQ4Yjg3ODNkZjFkMTc5OTAxZWI4N2E1Yzg5Nzc3Y2VmYjc3ZjY5MjMxYTUifQ%3D%3D" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="1495639153000" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="laravel_session" />
-                <option name="path" value="/" />
-                <option name="value" value="eyJpdiI6InhJdnhFUmh3Q2tYcm9pMUFubmE2QXc9PSIsInZhbHVlIjoiTkRWTFwvOUowS2hnUWR4TGJwK1ZXbGN2T0k2OCtOa09EUEEzZ3RmSG8xOGVRUWYwUGgrZmxMWlBOSXFsZ3RmbFJ0ZGJwSHJjaU8xZFVacFJ6eFVTNTFBPT0iLCJtYWMiOiJlMDNiYjIwOWQ2NTc4NzFjMjk0YTNiY2EzNjM2MzQzZmY0MjI0NzgxNzZiMGNkYjg4MDA2NTU5NTMwMDQwOWY5In0%3D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="http://localhost:8000" />
-          <option name="urlPath" value="/api/user/e" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="id" />
-                <option name="value" value="24" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="name" />
-                <option name="value" value="o" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="1495639153000" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="XSRF-TOKEN" />
-                <option name="path" value="/" />
-                <option name="value" value="eyJpdiI6IlFXRzNrVHdzZFwvYkQrVzU4YzVpWEJRPT0iLCJ2YWx1ZSI6IjZ5b1wvNjNxTVhUeEU1c0tXSHZVNXY1NnBEeGpYR2pWbHo5QTQzU1V1Vkc2bm1DbGRJb2poMkRcL2JlN1RSdjEzZEJYOU1EUE9udjIyVkVzUVpRK1BqNWc9PSIsIm1hYyI6ImExZTUwOWZmMDJmYjQyNmZkZWM3NGQ4Yjg3ODNkZjFkMTc5OTAxZWI4N2E1Yzg5Nzc3Y2VmYjc3ZjY5MjMxYTUifQ%3D%3D" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="1495639153000" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="laravel_session" />
-                <option name="path" value="/" />
-                <option name="value" value="eyJpdiI6InhJdnhFUmh3Q2tYcm9pMUFubmE2QXc9PSIsInZhbHVlIjoiTkRWTFwvOUowS2hnUWR4TGJwK1ZXbGN2T0k2OCtOa09EUEEzZ3RmSG8xOGVRUWYwUGgrZmxMWlBOSXFsZ3RmbFJ0ZGJwSHJjaU8xZFVacFJ6eFVTNTFBPT0iLCJtYWMiOiJlMDNiYjIwOWQ2NTc4NzFjMjk0YTNiY2EzNjM2MzQzZmY0MjI0NzgxNzZiMGNkYjg4MDA2NTU5NTMwMDQwOWY5In0%3D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="http://localhost:8000" />
-          <option name="urlPath" value="/api/user/e" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="id" />
-                <option name="value" value="24" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="1495639153000" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="XSRF-TOKEN" />
-                <option name="path" value="/" />
-                <option name="value" value="eyJpdiI6IlFXRzNrVHdzZFwvYkQrVzU4YzVpWEJRPT0iLCJ2YWx1ZSI6IjZ5b1wvNjNxTVhUeEU1c0tXSHZVNXY1NnBEeGpYR2pWbHo5QTQzU1V1Vkc2bm1DbGRJb2poMkRcL2JlN1RSdjEzZEJYOU1EUE9udjIyVkVzUVpRK1BqNWc9PSIsIm1hYyI6ImExZTUwOWZmMDJmYjQyNmZkZWM3NGQ4Yjg3ODNkZjFkMTc5OTAxZWI4N2E1Yzg5Nzc3Y2VmYjc3ZjY5MjMxYTUifQ%3D%3D" />
-              </Biscuit>
-              <Biscuit>
-                <option name="date" value="1495639153000" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="laravel_session" />
-                <option name="path" value="/" />
-                <option name="value" value="eyJpdiI6InhJdnhFUmh3Q2tYcm9pMUFubmE2QXc9PSIsInZhbHVlIjoiTkRWTFwvOUowS2hnUWR4TGJwK1ZXbGN2T0k2OCtOa09EUEEzZ3RmSG8xOGVRUWYwUGgrZmxMWlBOSXFsZ3RmbFJ0ZGJwSHJjaU8xZFVacFJ6eFVTNTFBPT0iLCJtYWMiOiJlMDNiYjIwOWQ2NTc4NzFjMjk0YTNiY2EzNjM2MzQzZmY0MjI0NzgxNzZiMGNkYjg4MDA2NTU5NTMwMDQwOWY5In0%3D" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="DELETE" />
-          <option name="urlBase" value="http://localhost:8000" />
-          <option name="urlPath" value="/api/user/26" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="id" />
-                <option name="value" value="24" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -6891,7 +7516,7 @@
       <workItem from="1496756961626" duration="1615000" />
       <workItem from="1496826732485" duration="933000" />
       <workItem from="1496831809967" duration="1266000" />
-      <workItem from="1499103214369" duration="6046000" />
+      <workItem from="1499103214369" duration="9015000" />
     </task>
     <task id="LOCAL-00001" summary="Login DONE&#10;Register TODO">
       <created>1496415019113</created>
@@ -6949,11 +7574,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499108302292</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update localstorage DONE">
+      <created>1499110794756</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1499110794756</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141078000" />
+    <option name="totallyTimeSpent" value="144047000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -6966,14 +7598,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1679" y="148" width="1282" height="774" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31544715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31544715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4025559" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43898574" sideWeight="0.37361965" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23333333" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41214058" sideWeight="0.6263804" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49041533" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49041533" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -7046,7 +7679,8 @@
     <MESSAGE value="reformat&#10;admin validate DONE&#10;show users/profile DONE&#10;show scores between dates TODO" />
     <MESSAGE value="reformat&#10;newGame&#10;saveGame&#10;logout after register" />
     <MESSAGE value="reformat&#10;newGame DONE&#10;saveGame DONE&#10;update localstorage TODO" />
-    <option name="LAST_COMMIT_MESSAGE" value="reformat&#10;newGame DONE&#10;saveGame DONE&#10;update localstorage TODO" />
+    <MESSAGE value="update localstorage DONE" />
+    <option name="LAST_COMMIT_MESSAGE" value="update localstorage DONE" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -7073,8 +7707,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TDW/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
-    <entry file="file://$PROJECT_DIR$/TDW/database/migrations/2014_10_12_000000_create_users_table.php" />
     <entry file="file://$PROJECT_DIR$/TDW/.env" />
     <entry file="file://$PROJECT_DIR$/TDW/app/Http/Controllers/UserController.php" />
     <entry file="file://$PROJECT_DIR$/TDW/app/User.php" />
@@ -7150,13 +7782,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/AccessController.php" />
-    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tdw/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -7177,13 +7802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="65" column="17" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -7294,14 +7912,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tdw/resources/views/layouts/gameLayout.blade.php" />
-    <entry file="file://$PROJECT_DIR$/tdw/public/js/adminFuntions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tdw/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -7342,26 +7952,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#45#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/js/adminFuntions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <folding>
+            <marker date="1499097788979" expanded="true" signature="452:458" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="710:716" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="871:877" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="2137:2143" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="2385:2391" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="3210:3216" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="3887:3893" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="4062:4068" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="5095:5101" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="5837:5843" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="6008:6014" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="6183:6189" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="7450:7456" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="8057:8063" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="8227:8233" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="9510:9516" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="9634:9640" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="9773:9779" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="9897:9903" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="10036:10042" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="10161:10167" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="10300:10306" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="12466:12472" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="13111:13117" ph=" " />
+            <marker date="1499097788979" expanded="true" signature="13289:13295" ph=" " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/GameController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3000">
+        <state relative-caret-position="-975">
           <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/js/Game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tdw/public/js/userFuntions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2940">
-          <caret line="196" column="55" lean-forward="true" selection-start-line="196" selection-start-column="55" selection-end-line="196" selection-end-column="55" />
+        <state relative-caret-position="210">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding />
         </state>
       </provider>

@@ -118,13 +118,13 @@ function getScore(id) {
                         $('#cincoPuntuaciones').append(
                             '<div class="one_half first">' +
                             '<p>' +
-                            score.score +
+                              score.score +
                             '</p>' +
                             '</div>' +
 
                             '<div class="one_half ">' +
                             '<p >' +
-                            score.created_at +
+                              score.created_at +
                             '</p>' +
                             '</div>'
                         )
@@ -137,8 +137,14 @@ function getScore(id) {
 
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
+/**
+* Actualiza los datos pasados por parámetro del usuario.
+* Rutas en api.php: UserController@UpdateUser
+*
+* @param request
+*/
 function updateUser(request) {
-    //id=window.location.search.substr(4);
     $.ajax({
         url: '/api/admin/' + idUser +
         '?name=' + request.name.value +
@@ -160,6 +166,13 @@ function updateUser(request) {
 }
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
+/**
+* Inhabilita al usuario actualizando su campo de control
+* Rutas en api.php: UserController@DropUser
+*
+* @param id
+*/
 function dropUser(id) {
     if (confirm('Are you sure?')) {
         $.ajax({
@@ -181,10 +194,20 @@ function dropUser(id) {
 }
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
+/**
+* Carga de la vista "game". Separada para mitigar la asincronia de AJAX
+*/
 function loadView() {
     window.location.assign("/game");
 }
 
+/**
+* Si no esta caragada la vista, la refresca, en otro caso, crea una partida nueva
+* Rutas en api.php: GameController@NewGame
+*
+* @param id
+*/
 function newGame(id) {
     loadView();
     preCharge = localStorage.getItem('idGame');
@@ -203,11 +226,17 @@ function newGame(id) {
             }
         });
     }
+    //Bucle de espera activa para actualizar la id de la partida creada
     while (localStorage.getItem('idGame') != preCharge)
         getIdGame();
 }
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
+/**
+* Si hay una partida cargada la guarda, si no, crea una partida nueva
+* Rutas en api.php: UserController@Save
+*/
 function saveGame() {
     getIdGame();
     //evalua que se haya creado un juego para guardar
@@ -230,21 +259,23 @@ function saveGame() {
         if (confirm('              Nothing to save.\n' +
                 'Do you want create a new game?')) {
             newGame(localStorage.getItem('idUser'));
-        }
-        ;
-    }
-    ;
+        };
+    };
 }
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
+/**
+* Si hay una partida empezada la reemplaza, si no, crea una partida nueva
+* Rutas en api.php: UserController@Restore
+*/
 function restoreGame() {
     //evalua que se haya creado un juego para restablecer
     if (window.location.pathname == "/game") {
         $.getJSON(
             '/api/restore?idUser=' + idUser,
             function (data) {
-                var restoredGame = JSON.parse(data[0].gameBoard);
-                //alert(restoredGame.score);
+                let restoredGame = JSON.parse(data[0].gameBoard);
                 game.custom = restoredGame.custom;
                 game.Latitudes = restoredGame.Latitudes;
                 game.previous = restoredGame.previous;
@@ -260,8 +291,6 @@ function restoreGame() {
         if (confirm('              Nothing to restore.\n' +
                 'Do you want create a new game?')) {
             newGame(localStorage.getItem('idUser'));
-        }
-        ;
-    }
-    ;
+        };
+    };
 }

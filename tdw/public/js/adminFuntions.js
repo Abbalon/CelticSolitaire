@@ -1,9 +1,20 @@
+/**
+* Con cada carga de vista, se ocultan los paneles con la información precargada
+*/
 $(document).ready(function () {
     $("#adminRow3").hide();
     $("#adminRow4").hide();
 });
 
 <!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+/**
+ * Al clickar la opción validar, si hay algúna petición muestra un menú son los usuarios pendientes
+ * y un boton para validarlos
+ *
+ * Rutas en api.php: UserController@ListValidatePlayer
+ */
 $('#validate').click(function () {
 
     $("#adminRow4").hide();
@@ -29,6 +40,7 @@ $('#validate').click(function () {
                     '<p class="nospace"> <i class="fa fa-arrow-right"></i> &nbsp;' + user.email +
                     '</p></div>' +
                     '<div class="col-xs-1">' +
+                    //Boton para validar al usuario
                     '<button onclick="validateUser(' + user.id + ');" type="submit" class="btn btn-primary"> Validate ' +
                     '</button>' +
                     '</div>' +
@@ -42,6 +54,13 @@ $('#validate').click(function () {
         });
 });
 
+/**
+* Actualiza el estado del usuario a validado
+*
+* Rutas en api.php: UserController@ValidatePlayer
+*
+* @param id
+*/
 function validateUser(id) {
     $.ajax({
         url: '/api/admin/validate/' + id,
@@ -58,6 +77,11 @@ function validateUser(id) {
 }
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
+/**
+* Muestra una pantalla para capturar las fechas limite para seleccionar las 10 mejores partidas en ese
+* intervalo
+*/
 $('#top10').click(function () {
 
     $("#adminRow4").hide();
@@ -66,13 +90,15 @@ $('#top10').click(function () {
 
     $('#adminRow3').show(1000);
 
+    //TODO Posible mejora, mostrar calendario gráfico
     /*$(function() {
      $("#fechaFin").datepicker();
      });
      */
 
     $('#options').prepend(
-        '<form name="formTop" class="form-horizontal" role="form" method="POST" action="javascript:SelectBetween(document.formTop);">' +
+        '<form name="formTop" class="form-horizontal" role="form" method="POST" ' +
+          'action="javascript:SelectBetween(document.formTop);">' +
         '<div class="one_third first">' +
         '<article>' +
         '<h3 class="font-x1"><i class="fa fa-random"></i> &nbsp; Seleccione fecha de início</h3>' +
@@ -86,6 +112,7 @@ $('#top10').click(function () {
         '</article>' +
         '</div>' +
         '<div class="one_third left">' +
+        //Boton para buscar
         '<button type="submit" class="btn btn-primary">' +
         'Search' +
         '</button>' +
@@ -95,6 +122,13 @@ $('#top10').click(function () {
     );
 });
 
+/**
+* Muetra las 10 mejores partidas entre las dos fechas pasadas por parámetro
+*
+* Rutas en api.php: GameController@SelectBetween
+*
+* @param request
+*/
 function SelectBetween(request) {
     $('#extend').empty();
 
@@ -139,7 +173,8 @@ function SelectBetween(request) {
                     '</p></div>' +
                     '<div class="col-xs-1 one_quarter">' +
                     '<div class="one_half first">' +
-                    '<button onclick="seeUser(' + current.idUser.value + ');" type="submit" class="btn btn-info">Show' +
+                    '<button onclick="seeUser(' + current.idUser.value + ');" type="submit"' +
+                      ' class="btn btn-info">Show' +
                     '</button>' +
                     '</div>' +
                     '</div>' +
@@ -159,6 +194,12 @@ function SelectBetween(request) {
 }
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
+/**
+* Muetra todas las partidas en el sistema
+*
+* Rutas en api.php: GameController@SelectAll
+*/
 $('#crudGame').click(function () {
 
     $("#adminRow4").hide();
@@ -224,6 +265,13 @@ $('#crudGame').click(function () {
         });
 });
 
+/**
+* Borra la partida selecionada
+*
+* Rutas en api.php: GameController@DeleteMatch
+*
+* @param id
+*/
 function deleteMatch(id) {
     if (confirm('Are you sure?')) {
         $.ajax({
@@ -245,6 +293,12 @@ function deleteMatch(id) {
 }
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
+/**
+* Muetra todos los jugadores del sistema y las opciones para hacer CRUD
+*
+* Rutas en api.php: UserController@SelectAll
+*/
 $('#crudUser').click(function () {
 
     $("#adminRow4").hide();
@@ -307,6 +361,14 @@ $('#crudUser').click(function () {
         });
 });
 <!-- ################################################################################################ -->
+
+/**
+* Funcionalidad para ver la información de un usuario
+*
+* Rutas en api.php: UserController@SelectById
+*
+* @param id
+*/
 function seeUser(id) {
     $.getJSON(
         '/api/admin/' + id,
@@ -350,10 +412,23 @@ function seeUser(id) {
         });
 }
 <!-- ################################################################################################ -->
+
+/**
+* Redirecciona a la vista de actualizar datos de ususario
+*
+* @param id
+*/
 function updateUserBtn(id) {
     window.location.href = "/update?id=" + id;
 };
 
+/**
+* Translada al servidor la información del ausuario que hay que actualizar
+*
+* Rutas en api.php: UserController@UpdateUser
+*
+* @param id
+*/
 function updateUser(request) {
     id = window.location.search.substr(4);
     $.ajax({
@@ -376,6 +451,14 @@ function updateUser(request) {
     });
 }
 <!-- ################################################################################################ -->
+
+/**
+* Igual funcinamiento que en userFunctions, deshabilita el logeo del jugador
+*
+* Rutas en api.php: UserController@DropUser
+*
+* @param id
+*/
 function deleteUser(id) {
     if (confirm('Are you sure?')) {
         $.ajax({
@@ -396,6 +479,14 @@ function deleteUser(id) {
     ;
 };
 <!-- ################################################################################################ -->
+
+/**
+* Borra al ususario del sistema
+*
+* Rutas en api.php: UserController@DeleteUser
+*
+* @param id
+*/
 function hardUser(id) {
     if (confirm('Are you sure?')) {
         $.ajax({
@@ -417,6 +508,12 @@ function hardUser(id) {
 };
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
+/**
+* Muestra la puntuación media de los juegadores en el sistema
+*
+* Rutas en api.php: UserController@ListAverage
+*/
 $('#showAverage').click(
     function () {
 

@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d89bd33-8b08-42c5-936a-e71f1d7be2a3" name="Default" comment="">
+    <list default="true" id="3d89bd33-8b08-42c5-936a-e71f1d7be2a3" name="Default" comment=" No funtionality added&#10; reformated and clened&#10; Added comments and explications">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/RegisterController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/tdw/app/Http/Controllers/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/tdw/database/migrations/2014_10_12_000000_create_users_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/public/css/ie9.css" afterPath="$PROJECT_DIR$/tdw/public/css/ie9.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/public/css/jquery-ui.css" afterPath="$PROJECT_DIR$/tdw/public/css/jquery-ui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/public/css/layout.css" afterPath="$PROJECT_DIR$/tdw/public/css/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/public/css/main.css" afterPath="$PROJECT_DIR$/tdw/public/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/public/js/adminFuntions.js" afterPath="$PROJECT_DIR$/tdw/public/js/adminFuntions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/public/js/plugins.js" afterPath="$PROJECT_DIR$/tdw/public/js/plugins.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/public/js/userFuntions.js" afterPath="$PROJECT_DIR$/tdw/public/js/userFuntions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/resources/views/admin/admin.blade.php" afterPath="$PROJECT_DIR$/tdw/resources/views/admin/admin.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/tdw/resources/views/auth/login.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/resources/views/auth/passwords/email.blade.php" afterPath="$PROJECT_DIR$/tdw/resources/views/auth/passwords/email.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/resources/views/auth/passwords/reset.blade.php" afterPath="$PROJECT_DIR$/tdw/resources/views/auth/passwords/reset.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/resources/views/game/game.blade.php" afterPath="$PROJECT_DIR$/tdw/resources/views/game/game.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/tdw/resources/views/layouts/app.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/resources/views/user/update.blade.php" afterPath="$PROJECT_DIR$/tdw/resources/views/user/update.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/resources/views/welcome.blade.php" afterPath="$PROJECT_DIR$/tdw/resources/views/welcome.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tdw/routes/api.php" afterPath="$PROJECT_DIR$/tdw/routes/api.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,135 +69,65 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.8447155">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="userFuntions.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tdw/public/js/userFuntions.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Game.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tdw/public/js/Game.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-450">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tdw/public/js/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-90">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="GameController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/GameController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-975">
-                  <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tdw/routes/api.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-106">
-                  <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="adminFuntions.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tdw/public/js/adminFuntions.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-                  <folding>
-                    <marker date="1499097788979" expanded="true" signature="452:458" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="710:716" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="871:877" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="2137:2143" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="2385:2391" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="3210:3216" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="3887:3893" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="4062:4068" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="5095:5101" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="5837:5843" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="6008:6014" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="6183:6189" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="7450:7456" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="8057:8063" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="8227:8233" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="9510:9516" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="9634:9640" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="9773:9779" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="9897:9903" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="10036:10042" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="10161:10167" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="10300:10306" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="12466:12472" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="13111:13117" ph=" " />
-                    <marker date="1499097788979" expanded="true" signature="13289:13295" ph=" " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tdw/routes/api.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="123">
-                  <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tdw/resources/views/welcome.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="708">
+              <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tdw/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tdw/resources/assets/js/bootstrap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-ui.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tdw/public/css/jquery-ui.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="1043" column="29" lean-forward="false" selection-start-line="1043" selection-start-column="29" selection-end-line="1043" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tdw/public/css/layout.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="1065" column="11" lean-forward="false" selection-start-line="1065" selection-start-column="11" selection-end-line="1065" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response19.html" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/practica_php/app/Http/Controllers/phpControler.php" />
-        <option value="$PROJECT_DIR$/TDW_PHP/app/Model_User_TDW.php" />
-        <option value="$PROJECT_DIR$/TDW_PHP/database/migrations/2017_05_23_172839_create_model__user__t_d_ws_table.php" />
-        <option value="$PROJECT_DIR$/TDW_PHP/app/Http/Models/Model_User_TDW.php" />
-        <option value="$PROJECT_DIR$/TDW_PHP/app/Models/Model_User_TDW.php" />
-        <option value="$PROJECT_DIR$/TDW_PHP/routes/api.php" />
-        <option value="$PROJECT_DIR$/TDW_PHP/app/Http/Controllers/Controler_User_TDW.php" />
-        <option value="$PROJECT_DIR$/TDW_PHP/config/database.php" />
-        <option value="$PROJECT_DIR$/TDW_PHP/.env" />
-        <option value="$PROJECT_DIR$/TDW_PHP/routes/web.php" />
-        <option value="$PROJECT_DIR$/TDW/app/UserTDW.php" />
         <option value="$PROJECT_DIR$/TDW/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/TDW/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
         <option value="$PROJECT_DIR$/TDW/app/User.php" />
@@ -198,7 +145,6 @@
         <option value="$PROJECT_DIR$/tdw/app/Http/Controllers/AccessController.php" />
         <option value="$PROJECT_DIR$/tdw/app/User.php" />
         <option value="$PROJECT_DIR$/tdw/app/Game.php" />
-        <option value="$PROJECT_DIR$/tdw/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/tdw/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
         <option value="$PROJECT_DIR$/tdw/public/css/app.css" />
         <option value="$PROJECT_DIR$/tdw/public/js/app.js" />
@@ -206,21 +152,33 @@
         <option value="$PROJECT_DIR$/tdw/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/tdw/resources/views/update.blade.php" />
         <option value="$PROJECT_DIR$/tdw/resources/views/auth/register.blade.php" />
-        <option value="$PROJECT_DIR$/tdw/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/tdw/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/tdw/public/index.php" />
         <option value="$PROJECT_DIR$/tdw/resources/views/user/user.blade.php" />
-        <option value="$PROJECT_DIR$/tdw/app/Http/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/tdw/public/js/adminFuntions.js" />
         <option value="$PROJECT_DIR$/tdw/resources/views/layouts/gameLayout.blade.php" />
-        <option value="$PROJECT_DIR$/tdw/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/tdw/resources/views/layouts/adminLayout.blade.php" />
         <option value="$PROJECT_DIR$/tdw/routes/web.php" />
-        <option value="$PROJECT_DIR$/tdw/routes/api.php" />
         <option value="$PROJECT_DIR$/tdw/database/migrations/2017_05_31_170316_create_games_table.php" />
         <option value="$PROJECT_DIR$/tdw/app/Http/Controllers/GameController.php" />
-        <option value="$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/RegisterController.php" />
+        <option value="$PROJECT_DIR$/tdw/routes/api.php" />
         <option value="$PROJECT_DIR$/tdw/public/js/userFuntions.js" />
+        <option value="$PROJECT_DIR$/tdw/public/js/adminFuntions.js" />
+        <option value="$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/RegisterController.php" />
+        <option value="$PROJECT_DIR$/tdw/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/tdw/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/tdw/public/css/main.css" />
+        <option value="$PROJECT_DIR$/tdw/public/css/layout.css" />
+        <option value="$PROJECT_DIR$/tdw/public/css/jquery-ui.css" />
+        <option value="$PROJECT_DIR$/tdw/public/css/ie9.css" />
+        <option value="$PROJECT_DIR$/tdw/public/js/plugins.js" />
+        <option value="$PROJECT_DIR$/tdw/resources/views/admin/admin.blade.php" />
+        <option value="$PROJECT_DIR$/tdw/resources/views/auth/passwords/email.blade.php" />
+        <option value="$PROJECT_DIR$/tdw/resources/views/auth/passwords/reset.blade.php" />
+        <option value="$PROJECT_DIR$/tdw/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/tdw/resources/views/game/game.blade.php" />
+        <option value="$PROJECT_DIR$/tdw/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/tdw/resources/views/user/update.blade.php" />
+        <option value="$PROJECT_DIR$/tdw/resources/views/welcome.blade.php" />
       </list>
     </option>
   </component>
@@ -295,10 +253,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1679" />
-    <option name="y" value="148" />
-    <option name="width" value="1282" />
-    <option name="height" value="774" />
+    <option name="x" value="-1" />
+    <option name="width" value="1682" />
+    <option name="height" value="1051" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -316,6 +273,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -405,7 +363,115 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tdw" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tdw" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tdw" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tdw" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="passwords" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -467,6 +533,54 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tdw" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tdw" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -490,6 +604,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tdw" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -631,7 +767,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -7516,7 +7651,8 @@
       <workItem from="1496756961626" duration="1615000" />
       <workItem from="1496826732485" duration="933000" />
       <workItem from="1496831809967" duration="1266000" />
-      <workItem from="1499103214369" duration="9015000" />
+      <workItem from="1499103214369" duration="9079000" />
+      <workItem from="1499154834579" duration="2280000" />
     </task>
     <task id="LOCAL-00001" summary="Login DONE&#10;Register TODO">
       <created>1496415019113</created>
@@ -7581,11 +7717,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499110794756</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="change user test solved">
+      <created>1499114332315</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1499114332315</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144047000" />
+    <option name="totallyTimeSpent" value="146391000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -7597,16 +7740,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1679" y="148" width="1282" height="774" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="0" width="1682" height="1051" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31544715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17239264" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4025559" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40199336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43898574" sideWeight="0.37361965" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23333333" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41214058" sideWeight="0.6263804" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49041533" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23366556" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -7616,6 +7757,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41214058" sideWeight="0.6263804" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -7680,7 +7822,9 @@
     <MESSAGE value="reformat&#10;newGame&#10;saveGame&#10;logout after register" />
     <MESSAGE value="reformat&#10;newGame DONE&#10;saveGame DONE&#10;update localstorage TODO" />
     <MESSAGE value="update localstorage DONE" />
-    <option name="LAST_COMMIT_MESSAGE" value="update localstorage DONE" />
+    <MESSAGE value="change user test solved" />
+    <MESSAGE value=" No funtionality added&#10; reformated and clened&#10; Added comments and explications" />
+    <option name="LAST_COMMIT_MESSAGE" value=" No funtionality added&#10; reformated and clened&#10; Added comments and explications" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -7707,97 +7851,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TDW/.env" />
-    <entry file="file://$PROJECT_DIR$/TDW/app/Http/Controllers/UserController.php" />
-    <entry file="file://$PROJECT_DIR$/TDW/app/User.php" />
-    <entry file="file://$PROJECT_DIR$/TDW/routes/api.php" />
-    <entry file="file://$PROJECT_DIR$/TDW/config/database.php" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4e67908d-05d5-4d9e-8a0f-766cbe42b457/console.sql" />
-    <entry file="file://$PROJECT_DIR$/CelticSolitaire/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CelticSolitaire/js/Game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/database/migrations/CreateGameTable.php" />
-    <entry file="file://$PROJECT_DIR$/tdw/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="410" column="26" lean-forward="true" selection-start-line="410" selection-start-column="26" selection-end-line="410" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CelticSolitaire/js/Model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/storage/logs/laravel.log" />
-    <entry file="file://$PROJECT_DIR$/tdw/resources/lang/en/passwords.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/vendor/composer/autoload_static.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="267" column="19" lean-forward="false" selection-start-line="267" selection-start-column="19" selection-end-line="267" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/706658ba/4e67908d-05d5-4d9e-8a0f-766cbe42b457/TDW.games">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/706658ba/4e67908d-05d5-4d9e-8a0f-766cbe42b457/TDW.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/AccessController.php" />
-    <entry file="file://$PROJECT_DIR$/tdw/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="55" lean-forward="true" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/database/migrations/2017_05_31_170125_CreateGameTable.php" />
-    <entry file="file://$PROJECT_DIR$/tdw/database/migrations/2017_05_29_193839_create_games_table.php" />
-    <entry file="file://$PROJECT_DIR$/tdw/app/Game.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tdw/database/migrations/2014_10_12_100000_create_password_resets_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -7808,13 +7861,6 @@
     <entry file="file://$PROJECT_DIR$/tdw/bootstrap/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4095">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -7835,32 +7881,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tdw/resources/views/hola.blade.php" />
     <entry file="file://$PROJECT_DIR$/tdw/resources/views/update.blade.php" />
-    <entry file="file://$PROJECT_DIR$/tdw/public/css/app.css">
+    <entry file="file://$PROJECT_DIR$/tdw/resources/views/layouts/gameLayout.blade.php" />
+    <entry file="file://$PROJECT_DIR$/tdw/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="195">
+          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/UserController.php">
+    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/ForgotPasswordController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1499096535020" expanded="true" signature="2319:2361" ph="update users... " />
-            <marker date="1499096535020" expanded="true" signature="4942:4980" ph="update users... " />
-            <marker date="1499096535020" expanded="true" signature="5091:5129" ph="update users... " />
-            <marker date="1499096535020" expanded="true" signature="5241:5280" ph="update users... " />
-            <marker date="1499096535020" expanded="true" signature="5782:5824" ph="update users... " />
+            <element signature="e#45#58#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/resources/views/user/user.blade.php">
+    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/ResetPasswordController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/GameController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -7868,6 +7944,187 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+            <marker date="1499158441673" expanded="true" signature="3427:3469" ph="update users... " />
+            <marker date="1499158441673" expanded="true" signature="6916:6954" ph="update users... " />
+            <marker date="1499158441673" expanded="true" signature="7065:7103" ph="update users... " />
+            <marker date="1499158441673" expanded="true" signature="7215:7254" ph="update users... " />
+            <marker date="1499158441673" expanded="true" signature="7366:7404" ph="update users... " />
+            <marker date="1499158441673" expanded="true" signature="7515:7557" ph="update users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/app/Game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/database/migrations/2017_05_31_170316_create_games_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="53" lean-forward="false" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/css/StyleFont.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/css/ie9.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/css/framework.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/css/fontawesome-4.3.0.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="75" lean-forward="false" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/js/adminFuntions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+          <folding>
+            <marker date="1499158375072" expanded="true" signature="499:505" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="808:814" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="999:1005" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="2447:2453" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="2719:2725" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="3671:3677" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="4479:4485" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="4684:4690" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="5913:5919" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="6802:6808" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="7003:7009" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="7208:7214" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="8736:8742" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="9474:9480" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="9674:9680" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="11215:11221" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="11359:11365" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="11528:11534" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="11682:11688" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="11851:11857" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="12006:12012" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="12175:12181" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="14703:14709" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="15511:15517" ph=" " />
+            <marker date="1499158375072" expanded="true" signature="15725:15731" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/js/Game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/js/Model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/js/plugins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/public/js/userFuntions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="105" column="28" lean-forward="false" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -7875,27 +8132,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/resources/views/home.blade.php">
+    <entry file="file://$PROJECT_DIR$/tdw/resources/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/resources/views/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="130" column="20" lean-forward="false" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -7903,16 +8148,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1499094156365" expanded="true" signature="1607:1624" ph="..." />
-            <marker date="1499094156365" expanded="true" signature="1607:1633" ph="..." />
-            <marker date="1499094156365" expanded="true" signature="1607:1640" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/resources/views/layouts/gameLayout.blade.php" />
-    <entry file="file://$PROJECT_DIR$/tdw/resources/views/layouts/app.blade.php">
+    <entry file="file://$PROJECT_DIR$/tdw/resources/views/auth/passwords/email.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/resources/views/auth/passwords/reset.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/resources/views/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="130" column="20" lean-forward="false" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/resources/views/game/game.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -7928,120 +8200,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/resources/views/user/update.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/resources/views/user/user.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdw/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tdw/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
+        <state relative-caret-position="465">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/database/migrations/2017_05_31_170316_create_games_table.php">
+    <entry file="file://$PROJECT_DIR$/tdw/resources/assets/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="28" column="53" lean-forward="false" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#45#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/public/js/adminFuntions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-          <folding>
-            <marker date="1499097788979" expanded="true" signature="452:458" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="710:716" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="871:877" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="2137:2143" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="2385:2391" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="3210:3216" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="3887:3893" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="4062:4068" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="5095:5101" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="5837:5843" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="6008:6014" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="6183:6189" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="7450:7456" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="8057:8063" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="8227:8233" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="9510:9516" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="9634:9640" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="9773:9779" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="9897:9903" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="10036:10042" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="10161:10167" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="10300:10306" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="12466:12472" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="13111:13117" ph=" " />
-            <marker date="1499097788979" expanded="true" signature="13289:13295" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/app/Http/Controllers/GameController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-975">
-          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/public/js/Game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/tdw/public/css/jquery-ui.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106">
-          <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        <state relative-caret-position="170">
+          <caret line="1043" column="29" lean-forward="false" selection-start-line="1043" selection-start-column="29" selection-end-line="1043" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdw/public/js/userFuntions.js">
+    <entry file="file://$PROJECT_DIR$/tdw/public/css/layout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="170">
+          <caret line="1065" column="11" lean-forward="false" selection-start-line="1065" selection-start-column="11" selection-end-line="1065" selection-end-column="11" />
           <folding />
         </state>
       </provider>

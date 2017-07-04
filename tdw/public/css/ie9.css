@@ -16,4 +16,6 @@ Using a conditional comment that can only be read by IE, we tell IE to load this
 file tells the slideshow to show all of the elements. As they are stacked on top of each other 
 only the last element will be visible
 */
-#bgslideshow ul li, #bgslideshow ul li em{opacity:1;}
+#bgslideshow ul li, #bgslideshow ul li em {
+    opacity: 1;
+}

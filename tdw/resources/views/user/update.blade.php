@@ -8,7 +8,7 @@
                 <div class="wrapper row0">
                     <div id="topbar" class="clear spacer">
                         <div class="fl_left">
-                            <h1 class="font-x2" ><a href="">Update data</a></h1>
+                            <h1 class="font-x2"><a href="">Update data</a></h1>
                         </div>
                     </div>
                 </div>
@@ -18,9 +18,10 @@
                     <!-- main body -->
                     <!-- ################################################################################################ -->
 
-                    <form name="formUpdate" class="form-horizontal" role="form" method="POST" action="javascript:updateUser(document.formUpdate);">
-                      {{ csrf_field() }}
-                      <input type="hidden" name="_method" value="put" />
+                    <form name="formUpdate" class="form-horizontal" role="form" method="POST"
+                          action="javascript:updateUser(document.formUpdate);">
+                        {{ csrf_field() }}
+                        <input type="hidden" name="_method" value="put"/>
 
                         <div class="content">
                             <!-- ################################################################################################ -->
@@ -31,14 +32,14 @@
                                         <label for="name" class="control-label">Name</label>
                                     </div>
                                     <div class="three_quarter">
-                                      <input id="name" type="text" class="form-control" name="name"
-                                             value="{{ old('name') }}"  autofocus>
+                                        <input id="name" type="text" class="form-control" name="name"
+                                               value="{{ old('name') }}" autofocus>
 
-                                      @if ($errors->has('name'))
-                                          <span class="help-block">
+                                        @if ($errors->has('name'))
+                                            <span class="help-block">
                                           <strong>{{ $errors->first('name') }}</strong>
                                       </span>
-                                      @endif
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -51,14 +52,14 @@
                                         <label for="nick" class="control-label">Nick</label>
                                     </div>
                                     <div class="three_quarter">
-                                      <input id="nick" type="text" class="form-control" name="nick"
-                                             value="{{ old('nick') }}" autofocus>
+                                        <input id="nick" type="text" class="form-control" name="nick"
+                                               value="{{ old('nick') }}" autofocus>
 
-                                      @if ($errors->has('nick'))
-                                          <span class="help-block">
+                                        @if ($errors->has('nick'))
+                                            <span class="help-block">
                                           <strong>{{ $errors->first('nick') }}</strong>
                                       </span>
-                                      @endif
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +73,7 @@
                                     </div>
                                     <div class="three_quarter">
                                         <input id="email" type="email" class="form-control" name="email"
-                                               value="{{ old('email') }}"  autofocus>
+                                               value="{{ old('email') }}" autofocus>
 
                                         @if ($errors->has('email'))
                                             <span class="help-block">
@@ -122,12 +123,12 @@
                             </div>
                             <!-- ################################################################################################ -->
 
-                              <div class="one_half right">
+                            <div class="one_half right">
                                 <button type="submit" class="btn btn-primary">
                                     Update
                                 </button>
-                              </div>
-                          </div>
+                            </div>
+                        </div>
                     </form>
                 </main>
             </div>

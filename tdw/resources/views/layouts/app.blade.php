@@ -44,12 +44,12 @@
 
         <div class="fl_right">
             <ul class="faico clear">
-              @if (!Auth::guest())
-                <li><a href="/user?id={{ Auth::user()->id }}" title="Home"><i class="fa fa-home"></i></a></li>
-              @else
-                <li><a href="/" title="Home"><i class="fa fa-home"></i></a></li>
-              @endif
-                <!-- Authentication Links  -->
+                @if (!Auth::guest())
+                    <li><a href="/user?id={{ Auth::user()->id }}" title="Home"><i class="fa fa-home"></i></a></li>
+                @else
+                    <li><a href="/" title="Home"><i class="fa fa-home"></i></a></li>
+                @endif
+            <!-- Authentication Links  -->
                 @if (Auth::guest())
                     <li><a href="{{ url('/login') }}" title="Login"><i class="fa fa-sign-in"></i></a></li>
                     <li><a href="{{ url('/register') }}" title="Register"><i class="fa fa-user-plus"></i></a></li>
@@ -96,28 +96,28 @@
     <div class="spacer">
         <nav id="mainav" class="clear">
             <ul class="clear">
-              @if (!Auth::guest())
-                @if(Auth::User()->isAdmin == 1)
-                  <li class="active"><a href="/admin">Home</a></li>
+                @if (!Auth::guest())
+                    @if(Auth::User()->isAdmin == 1)
+                        <li class="active"><a href="/admin">Home</a></li>
+                    @else
+                        <li class="active"><a href="/user?id={{ Auth::user()->id }}">Home</a></li>
+                    @endif
+                    <li><a class="drop" href="#">Profile</a>
+                        <ul>
+                            <li><a href="/update?id={{ Auth::user()->id }}">Update</a></li>
+                            <li><a href="javascript:dropUser({{ Auth::user()->id }});">Delete</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="drop" href="#">Play</a>
+                        <ul id="menuPlay">
+                            <li><a onclick="javascript:newGame({{ Auth::user()->id }})">New</a></li>
+                            <li><a onclick="javascript:saveGame({{ Auth::user()->id }})">Save</a></li>
+                            <li><a onclick="javascript:restoreGame()">Restore last</a></li>
+                        </ul>
+                    </li>
                 @else
-                  <li class="active"><a href="/user?id={{ Auth::user()->id }}">Home</a></li>
+                    <li class="active"><a href="/">Home</a></li>
                 @endif
-                <li><a class="drop" href="#">Profile</a>
-                    <ul>
-                        <li><a href="/update?id={{ Auth::user()->id }}">Update</a></li>
-                        <li><a href="javascript:dropUser({{ Auth::user()->id }});">Delete</a></li>
-                    </ul>
-                </li>
-                <li><a class="drop" href="#">Play</a>
-                    <ul id="menuPlay">
-                        <li><a onclick="javascript:newGame({{ Auth::user()->id }})">New</a></li>
-                        <li><a onclick="javascript:saveGame({{ Auth::user()->id }})">Save</a></li>
-                        <li><a onclick="javascript:restoreGame()">Restore last</a></li>
-                    </ul>
-                </li>
-              @else
-                <li class="active"><a href="/">Home</a></li>
-              @endif
             </ul>
         </nav>
     </div>

@@ -83,12 +83,12 @@
 
         <div class="fl_right">
             <ul class="faico clear">
-              @if (!Auth::guest())
-                <li><a href="/user?id={{ Auth::user()->id }}" title="Home"><i class="fa fa-home"></i></a></li>
-              @else
-                <li><a href="/" title="Home"><i class="fa fa-home"></i></a></li>
-              @endif
-                <!-- Authentication Links -->
+                @if (!Auth::guest())
+                    <li><a href="/user?id={{ Auth::user()->id }}" title="Home"><i class="fa fa-home"></i></a></li>
+                @else
+                    <li><a href="/" title="Home"><i class="fa fa-home"></i></a></li>
+                @endif
+            <!-- Authentication Links -->
                 @if (Auth::guest())
                     <li><a href="{{ url('/login') }}" title="Login"><i class="fa fa-sign-in"></i></a></li>
                     <li><a href="{{ url('/register') }}" title="Register"><i class="fa fa-user-plus"></i></a></li>

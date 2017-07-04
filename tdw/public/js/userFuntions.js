@@ -1,10 +1,12 @@
 var idUser = 0;
 
+/**
+ * Cada vez que se carga una vista de usuario: comprobamos si este ha cambiado, capturando su id de la URL;
+ * cargamos el campo de partidas guardadas
+ */
 $(document).ready(function () {
-    //$("#userRow3").hide();
     listenUsers(window.location.search.substr(4));
     getScore(localStorage.getItem('idUser'));
-    //restoreGame();
 });
 <!-- ################################################################################################ -->
 
@@ -41,8 +43,14 @@ function getIdGame() {
 
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-function getScore(id) { //GameController.
-    //var id = window.location.search.substr(4);
+
+/**
+ * Para el usuario pasado por parámetro, obtenememos la puntución y fecha de su última partida y de las 5 mejores.
+ * Rutas en api.php: GameController@SelectLast, GameControler@SelectScores
+ *
+ * @param id
+ */
+function getScore(id) {
     if (id != "") {
         $.getJSON(
             '/api/game?id=' + id,

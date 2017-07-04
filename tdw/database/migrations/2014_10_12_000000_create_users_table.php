@@ -17,12 +17,12 @@ class CreateUsersTable extends Migration
             $table->engine = 'InnoDB';
 
             $table->increments('id');
-            $table->string('name',40);
-            $table->string('nick',20)->default('nick');
+            $table->string('name', 40);
+            $table->string('nick', 20)->default('nick');
             $table->boolean('isAdmin')->default(0);
             $table->boolean('isEnabled')->default(0);
             $table->boolean('isDelete')->default(0);
-            $table->string('email',80);
+            $table->string('email', 80);
             $table->string('password');
             $table->string('telf', 12)->default('11111');
             $table->unique('email');

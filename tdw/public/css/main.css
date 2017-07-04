@@ -165,7 +165,7 @@ Knot
 
 .knot {
     position: relative;
-    //border-style: dotted;
+/ / border-style: dotted;
 }
 
 /*
@@ -173,7 +173,7 @@ Knot
 */
 .sidePanel {
     font-family: Stonehen;
-    //border-style: dotted;
+/ / border-style: dotted;
     text-align: left;
     top: 10em;
     left: 1em;

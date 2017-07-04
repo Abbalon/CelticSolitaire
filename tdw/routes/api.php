@@ -39,6 +39,6 @@ Route::put('/game/{id}', 'GameController@Save');//updateGame
 
 Route::get('/restore', 'GameController@Restore');//restore the match
 
-Route::delete('/game/{id}', 'GameController@DeleteMatch');
+Route::delete('/game/{id}', 'GameController@DeleteMatch');//Delete the selected match
 
 Route::post('/newGame', 'GameController@NewGame');//create new game

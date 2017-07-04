@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
-  /**  ################################################################################################ */
+    /**  ################################################################################################ */
     /**
      * Show the information of a specific user
      *
@@ -32,8 +32,8 @@ class UserController extends Controller
             );
         }
     }
-/**  ################################################################################################ */
-/**  ################################################################################################ */
+    /**  ################################################################################################ */
+    /**  ################################################################################################ */
     /**
      * Show the average score for each user
      *
@@ -42,9 +42,9 @@ class UserController extends Controller
     public function ListAverage()
     {
         $user = DB::table('games')
-        ->select(DB::raw('idUser , avg(score) as avg_score'))
-        ->groupby('idUser')
-        ->get();
+            ->select(DB::raw('idUser , avg(score) as avg_score'))
+            ->groupby('idUser')
+            ->get();
 
         return response()->json(
             $user
@@ -165,8 +165,8 @@ class UserController extends Controller
     /**
      * Shared Functions
      */
-     /**  ################################################################################################ */
-     /**  ################################################################################################ */
+    /**  ################################################################################################ */
+    /**  ################################################################################################ */
     /**
      * Create a new user instance.
      *
@@ -237,8 +237,8 @@ class UserController extends Controller
      */
     public function UpdateUser($id, Request $request)
     {
-      if($id==null)
-        $if=$request->id;
+        if ($id == null)
+            $if = $request->id;
         try {
             if ($request->name <> null ||
                 $request->nick <> null ||

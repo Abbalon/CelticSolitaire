@@ -174,7 +174,7 @@ function SelectBetween(request) {
                     '</p></div>' +
                     '<div class="col-xs-1 one_quarter">' +
                     '<div class="one_half first">' +
-                    '<button onclick="seeUser(' + current.idUser.value + ');" type="submit"' +
+                    '<button onclick="seeUser(' + current.idUser + ');" type="submit"' +
                       ' class="btn btn-info">Show' +
                     '</button>' +
                     '</div>' +
@@ -205,7 +205,7 @@ $('#crudGame').click(function () {
 
     $("#adminRow4").hide();
 
-    $("#adminRow4").hide();
+    $("#adminRow4").empty();
 
     $.getJSON(
         '/api/admin/game',
@@ -315,13 +315,14 @@ $('#crudUser').click(function () {
                 '<h3 class="font-x2"><i class="fa fa-database"></i> &nbsp; Users hosted</h3>' +
                 '<div class="row">' +
                 '<div id="name" class="col-xs-3 font-x1 one_quarter first">' +
-                '<p class="nospace"> NAME ' +
-                '</p></div>' +
+                '<p class="nospace"> NAME </p></div>' +
 
-                '<div id="email" class="col-xs-3 font-x1 one_half">' +
-                '<p class="nospace"> EMAIL' +
-                '</p>' +
-                '</div>' +
+                '<div id="email" class="col-xs-3 font-x1 one_quarter">' +
+                '<p class="nospace"> EMAIL </p></div>' +
+
+                '<div id="state" class="col-xs-3 font-x1 one_quarter">' +
+                '<p class="nospace"> STATE </p></div>' +
+
                 '</div>' +
                 '<hr>'
             );
@@ -333,9 +334,14 @@ $('#crudUser').click(function () {
                     '<p class="nospace"> <i class="fa fa-arrow-right"></i> &nbsp;' + user.name +
                     '</p></div>' +
 
-                    '<div id="email" class="col-xs-3 one_half">' +
+                    '<div id="email" class="col-xs-3 one_quarter">' +
                     '<p class="nospace"> <i class="fa fa-arrow-right"></i> &nbsp;' + user.email +
                     '</p></div>' +
+
+                    '<div id="state" class="col-xs-3 one_quarter">' +
+                    '<p class="nospace"> <i class="fa fa-arrow-right"></i> &nbsp;' + user.isDelete +
+                    '</p></div>' +
+
                     '<div class="col-xs-1 one_quarter">' +
                     '<div class="one_half first">' +
                     '<button onclick="seeUser(' + user.id + ');" type="submit" class="btn btn-info">Show' +
@@ -448,6 +454,7 @@ function updateUser(request) {
 
         success: function () {
             alert('done');
+            window.location.href = "/admin";
         },
         error: function () {
             alert('Está mal');

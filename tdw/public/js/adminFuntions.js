@@ -18,6 +18,7 @@ $(document).ready(function () {
 $('#validate').click(function () {
 
     $("#adminRow4").hide();
+    $('#options').empty();
 
     $.getJSON(
         '/api/admin',
@@ -279,9 +280,7 @@ function deleteMatch(id) {
             type: 'DELETE',
 
             success: function () {
-                $('#feetDiv').append(
-                    ''
-                );
+                alert('done');
             },
             error: function () {
                 alert('Está mal');
@@ -404,6 +403,13 @@ function seeUser(id) {
                     '<p class="nospace"> <i class="fa fa-arrow-right"></i> &nbsp;' + user.telf +
                     '</div>' +
 
+                    '<div class="one_third first">' +
+                    '<h3 class="font-x1">State &nbsp;</h3>' +
+                    '</div>' +
+                    '<div class="two_third">' +
+                    '<p class="nospace"> <i class="fa fa-arrow-right"></i> &nbsp;' + user.isEnabled +
+                    '</div>' +
+
                     '</article>'
                 );
             });
@@ -441,9 +447,7 @@ function updateUser(request) {
         type: 'PUT',
 
         success: function () {
-            $('#feetDiv').append(
-                ''
-            );
+            alert('done');
         },
         error: function () {
             alert('Está mal');
@@ -466,9 +470,7 @@ function deleteUser(id) {
             type: 'DELETE',
 
             success: function () {
-                $('#feetDiv').append(
-                    ''
-                );
+                alert('done');
             },
             error: function () {
                 alert('Está mal');
@@ -494,9 +496,7 @@ function hardUser(id) {
             type: 'DELETE',
 
             success: function () {
-                $('#feetDiv').append(
-                    ''
-                );
+                alert('done');
             },
             error: function () {
                 alert('Está mal');

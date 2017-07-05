@@ -86,7 +86,8 @@ class GameController extends Controller
         ) {
             if ($request->rows == null)
                 $request->rows = 10;
-            $scores = DB::table('games')->whereBetween('created_at', [$request->firstDate, $request->lastDate])
+            $scores = DB::table('games')
+                ->whereBetween('created_at', [$request->firstDate, $request->lastDate])
                 ->orderBy('created_at')->take($request->rows)->get();
             if ($scores <> "[]") {
                 return response()->json(
@@ -115,12 +116,7 @@ class GameController extends Controller
     /**  ################################################################################################ */
     /**  ################################################################################################ */
     /**
-     * Shows topX scores
-     *
-     * X passed in the request
-     *
-     * $request->rows
-     * $request->idUser
+     * Shows top10 scores
      *
      * @param Integer id
      *
@@ -129,7 +125,7 @@ class GameController extends Controller
     public function SelectScores($id)
     {
         $scores = DB::table('games')->where('idUser', $id)
-            ->orderBy('score', 'desc')->take(5)->get();
+            ->orderBy('score', 'desc')->take(10)->get();
 
         if ($scores <> "[]") {
             return response()->json(
@@ -244,7 +240,8 @@ class GameController extends Controller
         try {
             if ($request->score <> null
             ) {
-                $rows = DB::table('games')->where('id', $id)->update(['score' => $request->score, 'gameBoard' => $request->gameBoard]);
+                $rows = DB::table('games')->where('id', $id)
+                  ->update(['score' => $request->score, 'gameBoard' => $request->gameBoard]);
 
                 return response()->json(
                     [

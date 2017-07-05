@@ -1,5 +1,3 @@
-var idUser = 0;
-
 /**
  * Cada vez que se carga una vista de usuario: comprobamos si este ha cambiado, capturando su id de la URL;
  * cargamos el campo de partidas guardadas
@@ -7,6 +5,21 @@ var idUser = 0;
 $(document).ready(function () {
     listenUsers(window.location.search.substr(4));
     getScore(localStorage.getItem('idUser'));
+    if (window.location.pathname == "/game") {
+      $.getJSON(
+          '/api/restore?idUser=' + localStorage.getItem('idUser'),
+          function (data) {
+              var restoredGame = JSON.parse(data[0].gameBoard);
+              game.custom = restoredGame.custom;
+              game.Latitudes = restoredGame.Latitudes;
+              game.previous = restoredGame.previous;
+              game.current = restoredGame.current;
+              game.timer = restoredGame.timer;
+              game.time = restoredGame.time;
+              game.score = restoredGame.score;
+          }
+      );
+    }
 });
 <!-- ################################################################################################ -->
 
@@ -20,9 +33,8 @@ function listenUsers(id) {
         }
         if (localStorage.getItem('idUser') != id) {
             localStorage.setItem('idUser', id);
-            idUser = localStorage.getItem('idUser');
-            getIdGame();
         }
+        getIdGame();
     }
 }
 
@@ -34,9 +46,7 @@ function getIdGame() {
     $.getJSON(
         '/api/game?id=' + localStorage.getItem('idUser'),//id
         function (data) {
-            $.each(data, function (i, current) {
-                localStorage.setItem('idGame', current.id);
-            });
+                localStorage.setItem('idGame', data[0].id);
         }
     )
 }
@@ -85,9 +95,9 @@ function getScore(id) {
                             '</p>' +
                             '</div>'
                         )
+                      localStorage.setItem('idGame', score.id);
                     });
                 }
-
             }
         )
 
@@ -146,7 +156,7 @@ function getScore(id) {
 */
 function updateUser(request) {
     $.ajax({
-        url: '/api/admin/' + idUser +
+        url: '/api/admin/' + localStorage.getItem('idUser') +
         '?name=' + request.name.value +
         '&nick=' + request.nick.value +
         '&email=' + request.email.value +
@@ -210,7 +220,6 @@ function loadView() {
 */
 function newGame(id) {
     loadView();
-    preCharge = localStorage.getItem('idGame');
     if (window.location.pathname != "/game") {
         //create a new game
         $.ajax({
@@ -226,9 +235,7 @@ function newGame(id) {
             }
         });
     }
-    //Bucle de espera activa para actualizar la id de la partida creada
-    while (localStorage.getItem('idGame') != preCharge)
-        getIdGame();
+    getIdGame();
 }
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -271,26 +278,24 @@ function saveGame() {
 */
 function restoreGame() {
     //evalua que se haya creado un juego para restablecer
-    if (window.location.pathname == "/game") {
-        $.getJSON(
-            '/api/restore?idUser=' + idUser,
-            function (data) {
-                let restoredGame = JSON.parse(data[0].gameBoard);
-                game.custom = restoredGame.custom;
-                game.Latitudes = restoredGame.Latitudes;
-                game.previous = restoredGame.previous;
-                game.current = restoredGame.current;
-                game.timer = restoredGame.timer;
-                game.time = restoredGame.time;
-                game.score = restoredGame.score;
-
-                game.displayGame();
-            }
-        );
-    } else {
-        if (confirm('              Nothing to restore.\n' +
-                'Do you want create a new game?')) {
-            newGame(localStorage.getItem('idUser'));
-        };
-    };
+    if (window.location.pathname != "/game") {
+      loadView();
+    }
+    /*$.getJSON(
+        '/api/restore?idUser=' + localStorage.getItem('idUser'),
+        function (data) {
+            var restoredGame = JSON.parse(data[0].gameBoard);
+            game.custom = restoredGame.custom;
+            game.Latitudes = restoredGame.Latitudes;
+            game.previous = restoredGame.previous;
+            game.current = restoredGame.current;
+            game.timer = restoredGame.timer;
+            game.time = restoredGame.time;
+            game.score = restoredGame.score;
+        }
+    );*/
+    while(document.readyState != "complete"){
+    }
+      alert('complete');
+      game.displayGame();
 }

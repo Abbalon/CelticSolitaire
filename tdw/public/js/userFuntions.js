@@ -3,6 +3,9 @@
  * cargamos el campo de partidas guardadas
  */
 $(document).ready(function () {
+  if (!localStorage.getItem('gameState')) {
+      localStorage.setItem('gameState',0);
+  }
     listenUsers(window.location.search.substr(4));
     getScore(localStorage.getItem('idUser'));
     if (window.location.pathname == "/game") {
@@ -17,6 +20,9 @@ $(document).ready(function () {
               game.timer = restoredGame.timer;
               game.time = restoredGame.time;
               game.score = restoredGame.score;
+
+              if(localStorage.getItem('gameState') == 1)
+                game.displayGame();
           }
       );
     }
@@ -219,6 +225,7 @@ function loadView() {
 * @param id
 */
 function newGame(id) {
+    localStorage.setItem('gameState',0);
     loadView();
     if (window.location.pathname != "/game") {
         //create a new game
@@ -273,15 +280,16 @@ function saveGame() {
 <!-- ################################################################################################ -->
 
 /**
-* Si hay una partida empezada la reemplaza, si no, crea una partida nueva
+* Si hay una partida empezada, la reemplaza, si no, crea una partida nueva
 * Rutas en api.php: UserController@Restore
 */
 function restoreGame() {
     //evalua que se haya creado un juego para restablecer
+    localStorage.setItem('gameState', 1);
     if (window.location.pathname != "/game") {
       loadView();
     }
-    /*$.getJSON(
+    $.getJSON(
         '/api/restore?idUser=' + localStorage.getItem('idUser'),
         function (data) {
             var restoredGame = JSON.parse(data[0].gameBoard);
@@ -292,10 +300,8 @@ function restoreGame() {
             game.timer = restoredGame.timer;
             game.time = restoredGame.time;
             game.score = restoredGame.score;
+
+            game.displayGame();
         }
-    );*/
-    while(document.readyState != "complete"){
-    }
-      alert('complete');
-      game.displayGame();
+    );
 }

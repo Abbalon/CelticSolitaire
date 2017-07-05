@@ -152,12 +152,10 @@ function SelectBetween(request) {
                 '</h3>' +
                 '<div class="row">' +
                 '<div id="idUser" class="col-xs-3 font-x1 one_quarter first">' +
-                '<p class="nospace"> Id User ' +
-                '</p></div>' +
+                '<p class="nospace"> Id User </p></div>' +
 
                 '<div id="score" class="col-xs-3 font-x1 one_half">' +
-                '<p class="nospace"> Score' +
-                '</p></div>' +
+                '<p class="nospace"> Score </p></div>' +
                 '</div>' +
                 '<hr>'
             );
@@ -220,16 +218,13 @@ $('#crudGame').click(function () {
                 '<h3 class="font-x2"><i class="fa fa-database"></i> &nbsp; Matchs played</h3>' +
                 '<div class="row">' +
                 '<div id="idMatch" class="col-xs-3 font-x1 one_quarter first">' +
-                '<p class="nospace"> Id match ' +
-                '</p></div>' +
+                '<p class="nospace"> Id match </p></div>' +
 
                 '<div id="idUser" class="col-xs-3 font-x1 one_quarter">' +
-                '<p class="nospace"> Id user' +
-                '</p></div>' +
+                '<p class="nospace"> Id user </p></div>' +
 
                 '<div id="matchScore" class="col-xs-3 font-x1 one_quarter">' +
-                '<p class="nospace"> Score' +
-                '</p></div>' +
+                '<p class="nospace"> Score </p></div>' +
 
                 '</div>' +
                 '<hr>'
@@ -294,7 +289,7 @@ function deleteMatch(id) {
 <!-- ################################################################################################ -->
 
 /**
-* Muetra todos los jugadores del sistema y las opciones para hacer CRUD
+* Muestra todos los jugadores del sistema y las opciones para hacer CRUD
 *
 * Rutas en api.php: UserController@SelectAll
 */
@@ -454,7 +449,6 @@ function updateUser(request) {
 
         success: function () {
             alert('done');
-            window.location.href = "/admin";
         },
         error: function () {
             alert('Está mal');

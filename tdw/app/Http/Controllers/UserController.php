@@ -231,7 +231,7 @@ class UserController extends Controller
     /**
      * Create a new user instance.
      *
-     * @param  Request $request
+     * @param  Int $id, Request $request
      *
      * @return Response
      */
